@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49b5e848-93f1-45e4-8c92-9c88eb066943" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/package.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/AppLoader.js" afterPath="$PROJECT_DIR$/src/components/atoms/InlineLoader.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" afterPath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js" afterPath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" afterPath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" afterPath="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_utilMixins.scss" afterPath="$PROJECT_DIR$/src/styles/_utilMixins.scss" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeCard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeCard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
@@ -75,17 +64,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeCardsContainer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeCardsContainer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="56">
+              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
                 <element signature="e#90#140#0" expanded="true" />
                 <element signature="e#199#235#0" expanded="true" />
-                <element signature="e#341#402#0" expanded="true" />
+                <element signature="e#391#452#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +151,6 @@
         <option value="$PROJECT_DIR$/src/App/App.css" />
         <option value="$PROJECT_DIR$/src/App/App.js" />
         <option value="$PROJECT_DIR$/src/App/App.mod.scss" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" />
         <option value="$PROJECT_DIR$/Procfile" />
@@ -167,9 +165,10 @@
         <option value="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
       </list>
     </option>
   </component>
@@ -424,12 +423,12 @@
       <workItem from="1517125566346" duration="20440000" />
       <workItem from="1517287177980" duration="1240000" />
       <workItem from="1517317720388" duration="5105000" />
-      <workItem from="1517328776376" duration="6522000" />
+      <workItem from="1517328776376" duration="7258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101419000" />
+    <option name="totallyTimeSpent" value="102155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -664,16 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -849,19 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#90#140#0" expanded="true" />
-            <element signature="e#199#235#0" expanded="true" />
-            <element signature="e#341#402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -896,6 +872,27 @@
             <element signature="e#0#43#0" expanded="true" />
             <element signature="e#155#221#0" expanded="true" />
             <element signature="e#349#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#90#140#0" expanded="true" />
+            <element signature="e#199#235#0" expanded="true" />
+            <element signature="e#391#452#0" expanded="true" />
           </folding>
         </state>
       </provider>

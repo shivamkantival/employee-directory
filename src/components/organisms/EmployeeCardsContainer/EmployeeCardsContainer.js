@@ -9,13 +9,22 @@ import classnames from 'classnames';
 import {connect} from 'react-redux';
 import {fetchAllEmployees, updateEmployee} from 'actions/actionsHandlers/employeeDetails';
 
+//utils
+import _uniqueId from 'lodash/uniqueId';
+
 //components
 import EmployeeCard from 'components/molecules/EmployeeCard';
 import OverlayLoader from 'components/atoms/OverlayLoader'
 
+function hasFetchedData(nextProps, currentProps) {
+  return !nextProps.loading && currentProps.loading;
+}
+
 class EmployeeCardsContainer extends PureComponent {
   constructor(props) {
     super(props);
+    this.uniqueKey = _uniqueId(); // this helps to hard refresh page when new data is loaded
+    // thus previously rendered cards with same key are also rendered again
   }
   
   componentDidMount() {
@@ -25,11 +34,17 @@ class EmployeeCardsContainer extends PureComponent {
     }
   }
   
+  componentWillReceiveProps(nextProps) {
+    if (hasFetchedData(nextProps, this.props)) {
+      this.uniqueKey = _uniqueId();
+    }
+  }
+  
   renderCard = employeeDetails => {
     return <EmployeeCard
       employeeDetails={employeeDetails}
       onUpdate={this.props.updateEmployee}
-      key={employeeDetails.id}
+      key={`${this.uniqueKey}_${employeeDetails.id}`}
     />
   }
   
