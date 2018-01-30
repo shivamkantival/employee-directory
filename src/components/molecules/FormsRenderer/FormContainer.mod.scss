@@ -1,0 +1,19 @@
+@import "utilStyles";
+@import "utilMixins";
+
+.fullWidthField {
+  width: 100%;
+}
+
+.halfWidthField {
+  width: 45%;
+}
+
+.formFieldsContainer {
+  padding: 2*$decade;
+  min-width: 30*$decade;
+
+  @include border-radius($value: 0.5*$decade);
+  @extend .full-width;
+  @include flex-container($flow:row wrap);
+}

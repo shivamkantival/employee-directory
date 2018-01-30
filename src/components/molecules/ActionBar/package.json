@@ -1,0 +1,5 @@
+{
+  "name": "ActionBar",
+  "main": "./ActionBar.js",
+  "private": false
+}

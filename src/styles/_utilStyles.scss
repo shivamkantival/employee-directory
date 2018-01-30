@@ -1,0 +1,47 @@
+
+$decade: 10px;
+
+//color constants
+$navy-blue: #337ab7;
+$royal-blue: #1f83c1;
+$blue: #007eff;
+$parrot-green: #dff0d8;
+$green: #4DAF7C;
+$fresh: #4abdac;
+$magenta: #bf698a;
+$lavender: #6d7993;
+$charcoal: #373737;
+$overcast: #9099a2;
+$pale-white: #e1e3e8;
+$background-default: #f1f1f1;
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.center-x-y {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.center-x {
+  display: flex;
+  justify-content: center;
+}
+
+.center-y {
+  align-items: center;
+  display: flex;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}

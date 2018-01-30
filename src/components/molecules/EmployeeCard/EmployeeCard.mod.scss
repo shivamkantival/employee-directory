@@ -1,0 +1,20 @@
+@import "utilStyles";
+@import "utilMixins";
+
+.employeeCardContainer {
+	flex: 0 0 30*$decade;
+	height: 40*$decade;
+	margin-bottom: 5*$decade;
+	margin-right: 3*$decade;
+	border: #4abdac .5*$decade solid;
+	border-radius: $decade;
+
+	@include border-blur($blur: $decade, $spread: $decade);
+}
+
+.cardTopBackground {
+	position: relative;
+	height: 10*$decade;
+
+	background-color: $fresh;
+}

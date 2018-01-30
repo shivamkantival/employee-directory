@@ -1,0 +1,5 @@
+{
+  "main": "./FormRenderer.js",
+  "private": false,
+  "name": "FormRenderer"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "EmployeeCardsContainer",
+  "main": "./EmployeeCardsContainer.js",
+  "private": false
+}

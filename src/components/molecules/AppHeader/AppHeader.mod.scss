@@ -1,0 +1,31 @@
+@import "utilStyles";
+@import "utilMixins";
+
+$padding-from-ends: 4*$decade;
+$padding-towards-center: 2*$decade;
+
+.headerContainer {
+	padding: 0 2*$decade;
+	background-color: $lavender;
+	flex: 0 0 10*$decade;
+	@include flex-container($align-items: center, $justify: space-between);
+	@extend .full-width;
+}
+
+.headingContainer {
+	color: $pale-white;
+	font-family: cursive;
+	font-weight: bolder;
+	font-size: 4*$decade;
+	padding-left: $padding-from-ends;
+	padding-right: $padding-towards-center;
+}
+
+.pageInfoContainer {
+	color: $charcoal;
+	font-family: 'Georgia';
+	font-weight: normal;
+	font-size: 3*$decade;
+	padding-right: $padding-from-ends;
+	padding-left: $padding-towards-center;
+}

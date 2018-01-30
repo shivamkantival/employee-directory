@@ -1,0 +1,13 @@
+@import "utilStyles";
+@import "utilMixins";
+
+.appContainer {
+	@extend .full-height;
+	@extend .full-width;
+}
+
+.appBody {
+
+	@extend .full-height;
+	@include flex-container($flow: column nowrap, $justify: stretch);
+}

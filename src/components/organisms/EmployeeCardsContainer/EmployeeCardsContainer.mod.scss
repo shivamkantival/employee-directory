@@ -1,0 +1,11 @@
+@import "utilMixins";
+@import "utilStyles";
+
+.cardsSectionContainer {
+	padding: 100px 100px 50px;
+	background: $parrot-green;
+	overflow-y: scroll;
+	flex: 1 0 150px;
+
+	@include flex-container($flow: row wrap, $justify: space-between);
+}

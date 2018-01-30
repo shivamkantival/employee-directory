@@ -1,0 +1,28 @@
+
+@mixin flex-container($flow: row nowrap, $justify: space-between, $align-items: stretch, $align-content: flex-start) {
+  align-content: $align-content;
+  align-items: $align-items;
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin h-center() {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin border-blur($blur: 0px, $spread: 0px) {
+	-moz-box-shadow:    0 $blur $spread #ccc;
+	-webkit-box-shadow: 0 $blur $spread #ccc;
+	box-shadow:         0 $blur $spread #ccc;
+}

@@ -1,0 +1,43 @@
+@import "utilStyles";
+
+$extraDetailsHeight: 3*$decade;
+
+.imageSize {
+  height: 15*$decade;
+  width: 15*$decade;
+}
+
+.extraDetails {
+  width: 10*$decade;
+  height: $extraDetailsHeight;
+
+  @extend .center-x-y;
+}
+
+.errorStyles {
+  color: $magenta;
+  font-size: medium;
+
+  @extend .extraDetails;
+}
+
+.loaderStyles {
+
+  @extend .extraDetails;
+}
+
+.imageStyles {
+  @extend .imageSize
+}
+
+.placeholder {
+  box-sizing: content-box;
+  overflow: hidden;
+  border-radius: 50%;
+  border: $background-default .5*$decade solid;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @extend .imageSize;
+}

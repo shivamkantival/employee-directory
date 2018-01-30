@@ -1,0 +1,5 @@
+{
+  "name": "DynamicImageLoader",
+  "main": "./ImageLoader.js",
+  "private": false
+}

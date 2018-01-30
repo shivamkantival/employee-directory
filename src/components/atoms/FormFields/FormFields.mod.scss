@@ -1,0 +1,23 @@
+@import "utilStyles";
+
+$font-size: 1.5*$decade;
+$fieldHeight: 3.6*$decade;
+
+.fieldsContainer {
+  padding-bottom: .5*$decade;
+  margin-top: 0.5*$decade;
+}
+
+.labelStyles {
+  color: $navy-blue;
+  font-size: $font-size;
+}
+
+.fieldStyles {
+  height: $fieldHeight;
+}
+
+.errorStyles {
+  font-size: $font-size;
+  color: $magenta;
+}

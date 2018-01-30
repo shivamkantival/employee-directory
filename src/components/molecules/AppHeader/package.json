@@ -1,0 +1,5 @@
+{
+  "main": "./AppHeader.js",
+  "name": "AppHeader",
+  "private": false
+}

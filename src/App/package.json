@@ -1,5 +1,5 @@
 {
     "main": "./App.js",
     "name": "app",
-    "private": true
+    "private": false
 }

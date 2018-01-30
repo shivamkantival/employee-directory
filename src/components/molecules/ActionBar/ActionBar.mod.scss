@@ -1,0 +1,16 @@
+@import "utilStyles";
+@import "utilMixins";
+
+.actionBarContainer {
+	background-color: $background-default;
+	padding: $decade;
+	flex: 0 0 7*$decade;
+
+	@include flex-container($justify: space-around);
+	@extend .center-x-y;
+}
+
+.actionButton {
+	width: 25*$decade !important;
+	margin: 0 3*$decade;
+}
