@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49b5e848-93f1-45e4-8c92-9c88eb066943" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/package.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/AppLoader.js" afterPath="$PROJECT_DIR$/src/components/atoms/InlineLoader.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" afterPath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js" afterPath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" afterPath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" afterPath="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_utilMixins.scss" afterPath="$PROJECT_DIR$/src/styles/_utilMixins.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,51 +29,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeCardsContainer.mod.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.mod.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EmployeeCard.mod.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="310">
+              <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_utilStyles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/_utilStyles.scss">
+      <file leaf-file-name="EmployeeCard.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="246">
+              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#155#221#0" expanded="true" />
+                <element signature="e#349#389#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_utilMixins.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/_utilMixins.scss">
+      <file leaf-file-name="PlaceholderImage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="75">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageLoader.mod.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,42 +78,14 @@
       <file leaf-file-name="EmployeeCardsContainer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            <state relative-caret-position="182">
+              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="21" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
-                <element signature="e#162#198#0" expanded="true" />
+                <element signature="e#90#140#0" expanded="true" />
+                <element signature="e#199#235#0" expanded="true" />
+                <element signature="e#341#402#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deploy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,6 +107,10 @@
       <find>s</find>
       <find>props</find>
       <find>engines</find>
+      <find>components/atoms/AppLoader</find>
+      <find>errorStyles</find>
+      <find>error</find>
+      <find>PlaceholderImage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,10 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/FormContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/package.json" />
-        <option value="$PROJECT_DIR$/src/styles/_utilStyles.scss" />
-        <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/package.json" />
         <option value="$PROJECT_DIR$/src/components/organisms/FilterUserForm/package.json" />
@@ -159,9 +140,6 @@
         <option value="$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.js" />
         <option value="$PROJECT_DIR$/src/components/organisms/AddUserForm/index.js" />
         <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/validators.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
-        <option value="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" />
-        <option value="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js" />
         <option value="$PROJECT_DIR$/src/actions/creators/userDetails.js" />
         <option value="$PROJECT_DIR$/src/actions/reducers/employeeDetails.js" />
         <option value="$PROJECT_DIR$/src/actions/reducers/index.js" />
@@ -171,20 +149,27 @@
         <option value="$PROJECT_DIR$/src/actions/actionsHandlers/employeeDetails.js" />
         <option value="$PROJECT_DIR$/src/actions/actionsHandlers/filters.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" />
         <option value="$PROJECT_DIR$/src/App/App.css" />
         <option value="$PROJECT_DIR$/src/App/App.js" />
         <option value="$PROJECT_DIR$/src/App/App.mod.scss" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/styles/_utilMixins.scss" />
-        <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/deploy.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/package.json" />
+        <option value="$PROJECT_DIR$/src/styles/_utilMixins.scss" />
+        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
+        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" />
       </list>
     </option>
   </component>
@@ -284,6 +269,107 @@
               <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
               <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="halogen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="atoms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="atoms" type="462c0819:PsiDirectoryNode" />
+              <item name="OverlayLoader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="molecules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="DynamicImageLoader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="EmployeeCard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="organisms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="organisms" type="462c0819:PsiDirectoryNode" />
+              <item name="EmployeeCardsContainer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="organisms" type="462c0819:PsiDirectoryNode" />
+              <item name="EmployeeDetailsForm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -338,12 +424,12 @@
       <workItem from="1517125566346" duration="20440000" />
       <workItem from="1517287177980" duration="1240000" />
       <workItem from="1517317720388" duration="5105000" />
-      <workItem from="1517328776376" duration="2362000" />
+      <workItem from="1517328776376" duration="6522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97259000" />
+    <option name="totallyTimeSpent" value="101419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -353,6 +439,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49722221" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -365,7 +452,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49722221" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -382,49 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/constants/timezone.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/untitled folder/recruiting-task-0.2.6/runserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.npmrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/timezoneConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/validators.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -471,6 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -503,14 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/reducers/employeeDetails.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -518,14 +554,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -551,16 +579,6 @@
         <state relative-caret-position="45">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,25 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#171#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -683,38 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_utilMixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_utilStyles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -740,17 +707,6 @@
           <folding>
             <element signature="e#0#43#0" expanded="false" />
             <element signature="e#128#196#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#162#198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -790,16 +746,157 @@
     <entry file="file://$PROJECT_DIR$/deploy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        <state relative-caret-position="135">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/OverlayLoader/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/InlineLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/halogen/PulseLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-401">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_utilMixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_utilStyles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-789">
+          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#90#140#0" expanded="true" />
+            <element signature="e#199#235#0" expanded="true" />
+            <element signature="e#341#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#155#221#0" expanded="true" />
+            <element signature="e#349#389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

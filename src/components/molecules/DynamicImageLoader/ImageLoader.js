@@ -8,7 +8,7 @@ import classnames from 'classnames';
 import _isEmpty from 'lodash/isEmpty';
 
 //components
-import AppLoader, {SIZES} from 'components/atoms/AppLoader';
+import InlineLoader, {SIZES} from 'components/atoms/InlineLoader';
 import PlaceholderImage from 'components/atoms/PlaceholderImage';
 
 const FALLBACK = 'fallback',
@@ -71,7 +71,7 @@ class DynamicImageLoader extends PureComponent {
     if (error) {
       elem = (<div className={classnames(s.errorStyles)}>Image not found</div>);
     } else if (loading) {
-      elem = (<AppLoader loaderClass={s.loaderStyles} size={SIZES.sm} />);
+      elem = (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />);
     }
 
     return (<div className={props.containerClassName}>
@@ -82,7 +82,7 @@ class DynamicImageLoader extends PureComponent {
         onLoad={that.handleOnLoad}
         onError={that.handleOnError}
         fallbackImg={props.fallbackImg}
-        error={error}
+        hasError={error}
       />
       {elem}
     </div>);

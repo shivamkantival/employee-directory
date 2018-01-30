@@ -8,7 +8,6 @@ $extraDetailsHeight: 3*$decade;
 }
 
 .extraDetails {
-  width: 10*$decade;
   height: $extraDetailsHeight;
 
   @extend .center-x-y;
@@ -22,6 +21,7 @@ $extraDetailsHeight: 3*$decade;
 }
 
 .loaderStyles {
+	width: 10*$decade;
 
   @extend .extraDetails;
 }

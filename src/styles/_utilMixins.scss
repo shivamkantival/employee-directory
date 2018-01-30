@@ -21,6 +21,13 @@
 	transform: translateX(-50%);
 }
 
+@mixin h-v-center() {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 @mixin border-blur($blur: 0px, $spread: 0px) {
 	-moz-box-shadow:    0 $blur $spread #ccc;
 	-webkit-box-shadow: 0 $blur $spread #ccc;

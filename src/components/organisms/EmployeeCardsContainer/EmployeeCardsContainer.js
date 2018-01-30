@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 //styles
 import s from './EmployeeCardsContainer.mod.scss';
+import classnames from 'classnames';
 
 //state and actions
 import {connect} from 'react-redux';
@@ -10,6 +11,7 @@ import {fetchAllEmployees, updateEmployee} from 'actions/actionsHandlers/employe
 
 //components
 import EmployeeCard from 'components/molecules/EmployeeCard';
+import OverlayLoader from 'components/atoms/OverlayLoader'
 
 class EmployeeCardsContainer extends PureComponent {
   constructor(props) {
@@ -25,16 +27,17 @@ class EmployeeCardsContainer extends PureComponent {
   
   renderCard = employeeDetails => {
     return <EmployeeCard
-      emploeeDetails={employeeDetails}
+      employeeDetails={employeeDetails}
       onUpdate={this.props.updateEmployee}
       key={employeeDetails.id}
     />
   }
   
   render() {
-    const employees = this.props.employees || [];
-     return (<div className={s.cardsSectionContainer}>
+    const {employees = [], loading} = this.props;
+     return (<div className={classnames(s.cardsSectionContainer, 'pos-rel')}>
        {employees.map(this.renderCard)}
+       <OverlayLoader show={loading} z-index="5" />
      </div>);
   }
 }

@@ -13,6 +13,8 @@
 .sampleImage {
   flex-wrap: wrap;
   min-height: 15*$decade !important;
+	margin-bottom: 2*$decade;
+
   @extend .center-x;
 }
 
