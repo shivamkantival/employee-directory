@@ -6,8 +6,9 @@
 	height: 40*$decade;
 	margin-bottom: 5*$decade;
 	margin-right: 3*$decade;
-	border: #4abdac .5*$decade solid;
+	border: $fresh .5*$decade solid;
 	border-radius: $decade;
+	background: white;
 
 	@include border-blur($blur: $decade, $spread: $decade);
 }
