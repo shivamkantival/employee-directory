@@ -12,7 +12,7 @@ import {
 	adaptToQueryString,
 } from 'utils/service';
 import {
-	adaptUserDetails,
+  adaptUserDetailsForQuery,
 } from 'utils/userDetails';
 
 //service
@@ -25,7 +25,7 @@ export const applyFilters = filters => dispatch => {
 	const loadingDetailsAction = createLoadingDetailsAction();
 	dispatch(loadingDetailsAction);
 	
-	const queryParams = adaptToQueryString(adaptUserDetails(filters));
+	const queryParams = adaptToQueryString(adaptUserDetailsForQuery(filters));
 	
 	assetService.get(`?${queryParams}`)
 		.then(userDetails => {

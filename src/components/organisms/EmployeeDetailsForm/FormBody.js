@@ -13,11 +13,14 @@ import {IMAGE as IMAGE_URL, COLOR as PROFILE_COLOR} from 'constants/userDetailTy
 //components
 import DynamicImageLoader from 'components/molecules/DynamicImageLoader'
 
+//utils
+import {getFullName} from 'utils/userDetails';
+
 class FormBody extends PureComponent {
   renderImageSection () {
     const that = this,
       {value} = that.props;
-
+    
     const source = value[IMAGE_URL];
     return (<div className={s.imageSection}>
       <div>
@@ -25,12 +28,14 @@ class FormBody extends PureComponent {
           fallbackImg={personImage}
           source={source}
           containerClassName={s.sampleImage}
-		/>
+        />
       </div>
-      <div className={s.colorWindow} style={{background: value[PROFILE_COLOR]}} />
+      <div className={s.dynamicName} style={{color: value[PROFILE_COLOR]}} >
+        <span className={s.ellipsis}>{getFullName(value)}</span>
+      </div>
     </div>)
   }
-
+  
   renderFieldsSection () {
     const {FormFieldsRenderer, onValidate, onChange, value, config} = this.props;
     return (<FormFieldsRenderer
@@ -38,9 +43,9 @@ class FormBody extends PureComponent {
       value={value}
       onValidate={onValidate}
       onChange={onChange}
-	/>)
+    />)
   }
-
+  
   render () {
     return (<div className={s.formBodyContainer}>
       {this.renderImageSection()}

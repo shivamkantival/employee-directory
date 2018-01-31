@@ -4,6 +4,7 @@ import {
 	LOADED_DETAILS,
 	LOADING_DETAILS,
   ERROR_WHILE_LOADING,
+  UPDATE_USER,
 } from "../reducers";
 
 export function loadingDetails() {
@@ -30,4 +31,11 @@ export function errorLoadingAction() {
   return {
     type: ERROR_WHILE_LOADING,
   };
+}
+
+export function updateUserAction(data) {
+  return {
+    type: UPDATE_USER,
+    payload: data,
+  }
 }

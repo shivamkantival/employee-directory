@@ -5,7 +5,7 @@ import PropTypoes from 'prop-types';
 import s from './OverlayLoader.mod.scss';
 
 //component
-import Loader from 'halogen/PulseLoader';
+import Loader from 'halogen/SyncLoader';
 
 function OverlayLoader(props) {
   return props.show && (<div className={s.overlayContainer} style={{"z-index": props['z-index'] || 1}} >

@@ -15,6 +15,7 @@
   min-height: 15*$decade !important;
 	margin-bottom: 2*$decade;
 
+	@include h-center();
   @extend .center-x;
 }
 
@@ -24,13 +25,21 @@
 
 .imageSection {
   width: 20*$decade;
+	padding-top: 7*$decade;
   padding-right: 1.5*$decade;
   border-right: $parrot-green .1*$decade solid;
 
-  @include flex-container($justify: center, $flow: column nowrap, $align-items: center);
 }
 
-.colorWindow {
-  width: 6*$decade;
-  height: 2*$decade;
+.dynamicName {
+	width: 15*$decade;
+	text-align: center;
+	font-size: medium;
+
+	@include h-center();
+	@extend .center-x;
+}
+
+.ellipsis {
+	@include ellipsis();
 }

@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 //styles
-import s from './EmployeeCardsContainer.mod.scss';
+import s from './UserCardsContainer.mod.scss';
 import classnames from 'classnames';
 
 //state and actions
@@ -13,24 +13,21 @@ import {fetchAllEmployees, updateEmployee} from 'actions/actionsHandlers/employe
 import _uniqueId from 'lodash/uniqueId';
 
 //components
-import EmployeeCard from 'components/molecules/EmployeeCard';
+import UserCard from 'components/molecules/UserCard';
 import OverlayLoader from 'components/atoms/OverlayLoader'
 
 function hasFetchedData(nextProps, currentProps) {
   return !nextProps.loading && currentProps.loading;
 }
 
-class EmployeeCardsContainer extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.uniqueKey = _uniqueId(); // this helps to hard refresh page when new data is loaded
-    // thus previously rendered cards with same key are also rendered again
-  }
+class UserCardsContainer extends PureComponent {
+  uniqueKey = _uniqueId(); // this helps to hard refresh page when new data is loaded
+  // thus previously rendered cards with same key are also rendered again
   
   componentDidMount() {
     const props = this.props;
     if (!props.loading && !props.loaded) {
-      props.fetchAllEmployees();
+      props.fetchAllUsers();
     }
   }
   
@@ -40,20 +37,22 @@ class EmployeeCardsContainer extends PureComponent {
     }
   }
   
-  renderCard = employeeDetails => {
-    return <EmployeeCard
-      employeeDetails={employeeDetails}
-      onUpdate={this.props.updateEmployee}
-      key={`${this.uniqueKey}_${employeeDetails.id}`}
+  renderCard = userDetails => {
+    return <UserCard
+      userDetails={userDetails}
+      onUpdate={this.props.updateUser}
+      key={`${this.uniqueKey}_${userDetails.id}`}
     />
-  }
+  };
   
   render() {
-    const {employees = [], loading} = this.props;
-     return (<div className={classnames(s.cardsSectionContainer, 'pos-rel')}>
-       {employees.map(this.renderCard)}
-       <OverlayLoader show={loading} z-index="5" />
-     </div>);
+    const {users = [], loading} = this.props;
+    return (<div className={classnames(s.cardsSection, 'pos-rel')}>
+      <section className={s.cardsContainer}>
+        {users.map(this.renderCard)}
+      </section>
+      <OverlayLoader show={loading} z-index="5" />
+    </div>);
   }
 }
 
@@ -62,14 +61,14 @@ function mapStateToProps(state) {
   return {
     loading: employeeDetailsState.loading,
     loaded: employeeDetailsState.loaded,
-    employees: employeeDetailsState.data,
+    users: employeeDetailsState.data,
   }
 }
 
 export default connect(
   mapStateToProps,
   {
-    fetchAllEmployees,
-    updateEmployee,
+    fetchAllUsers: fetchAllEmployees,
+    updateUser: updateEmployee,
   },
-)(EmployeeCardsContainer);
+)(UserCardsContainer);

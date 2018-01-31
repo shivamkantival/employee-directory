@@ -33,3 +33,9 @@
 	-webkit-box-shadow: 0 $blur $spread #ccc;
 	box-shadow:         0 $blur $spread #ccc;
 }
+
+@mixin ellipsis() {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

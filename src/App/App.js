@@ -9,7 +9,7 @@ import s from './App.mod.scss';
 //components
 import AppHeader from 'components/molecules/AppHeader';
 import ActionBar from 'components/molecules/ActionBar';
-import EmployessDetailsContainer from 'components/organisms/EmployeeCardsContainer';
+import UserDetailsContainer from 'components/organisms/UserCardsContainer';
 
 
 export default class App extends PureComponent {
@@ -19,7 +19,7 @@ export default class App extends PureComponent {
       <div className={s.appBody}>
         <AppHeader/>
         <ActionBar/>
-        <EmployessDetailsContainer />
+        <UserDetailsContainer />
       </div>
 		</div>)
   }

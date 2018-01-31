@@ -6,26 +6,25 @@ import {
 	loadingDetails as createLoadingDetailsAction,
 	loadedDetails as createLoadedDetailsAction,
   errorLoadingAction as createErrorWhileLoadingAction,
+  updateUserAction as createUpdateUserAction,
 } from "../creators/userDetails";
 
 //utils
 import {
-	adaptUserDetails,
+  adaptUserDetailsForQuery,
 } from 'utils/userDetails';
+import queryString from 'query-string';
 
 //service
 import assetService from 'service';
 
 export const addUser = values => dispatch => {
-	const loadingDetailsAction = createLoadingDetailsAction();
-	dispatch(loadingDetailsAction);
-	
-	assetService.post('', adaptUserDetails(values))
+	assetService.post('', adaptUserDetailsForQuery(values))
 		.then(data => {
 			dispatch(createAddUserAction(data));
 		})
 		.catch(err => {
-			dispatch(createErrorWhileLoadingAction());
+		
 		})
 }
 
@@ -40,4 +39,14 @@ export const fetchAllEmployees = () => dispatch => {
     .catch(err => {
       dispatch(createErrorWhileLoadingAction());
     })
+}
+
+export const updateEmployee = updatedUserDetails => dispatch => {
+  const url = encodeURIComponent(`/${updatedUserDetails.id}`);
+  assetService.put(url, adaptUserDetailsForQuery(updatedUserDetails))
+    .then(data => {
+      dispatch(createUpdateUserAction(data));
+    })
+    .catch(err => {
+    });
 }

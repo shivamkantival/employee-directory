@@ -1,0 +1,5 @@
+{
+  "main": "./UserCard.js",
+  "name": "UserCard",
+  "private": false
+}

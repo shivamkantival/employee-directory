@@ -1,0 +1,107 @@
+@import "utilStyles";
+@import "utilMixins";
+
+$max-content-width: 24*$decade;
+$distance-of-details-from-sides: 2*$decade;
+
+.verticalFlexContainerWithCenteredElements {
+	@include flex-container($flow: column nowrap, $justify: start, $align-items: center);
+}
+
+.userCardContainer {
+	flex: 0 0 27*$decade;
+	height: 35*$decade;
+	margin-bottom: 5*$decade;
+	margin-right: 3*$decade;
+	border: $fresh .5*$decade solid;
+	border-radius: $decade;
+	background: white;
+	transition: opacity 500ms ease-in-out;
+
+	@include border-blur($blur: $decade, $spread: $decade);
+}
+
+.entering {
+	opacity: 0;
+}
+
+.cardTopBackground {
+	position: relative;
+	height: 10*$decade;
+
+	background-color: $fresh;
+}
+
+.imageSize {
+	height: 10*$decade;
+	width: 10*$decade;
+}
+
+.profileImagePlaceHolder {
+	position: absolute;
+	top: 5*$decade;
+	left: 10*$decade;
+	border-radius: 50%;
+	border: white solid .5*$decade;
+	overflow: hidden;
+
+	@extend .imageSize;
+}
+
+.profileImage {
+	@extend .imageSize;
+}
+
+.detailsBox {
+	position: absolute;
+	bottom: 0;
+	padding: 7*$decade .5*$decade 2*$decade;
+	height: 25*$decade;
+
+	@extend .full-width;
+	@extend .verticalFlexContainerWithCenteredElements;
+}
+
+.locationContainer {
+	color: $charcoal;
+	font-size: medium;
+	max-width: $max-content-width;
+
+	@include ellipsis();
+}
+
+.userName {
+	font-size: large;
+	max-width: $max-content-width;
+
+	@include ellipsis();
+}
+
+.teamDetailsContainer {
+	margin-top: 3*$decade;
+
+	@extend .verticalFlexContainerWithCenteredElements;
+}
+
+.teamDetail {
+	max-width: $max-content-width;
+	color: $lavender;
+	font-size: medium;
+
+	@include ellipsis();
+}
+
+.updateOption {
+	position: absolute;
+	right: $distance-of-details-from-sides;
+	bottom: $distance-of-details-from-sides;
+	color: $charcoal;
+	transition: color 300ms ease-out;
+	font-style: italic;
+	text-decoration:underline;
+	cursor: pointer;
+
+	&:hover {
+		color: $fresh;
+	}
+}

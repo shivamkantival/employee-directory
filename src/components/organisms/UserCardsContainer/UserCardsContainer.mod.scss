@@ -1,0 +1,17 @@
+@import "utilMixins";
+@import "utilStyles";
+
+.cardsContainer {
+	overflow-y: scroll;
+	padding: 5*$decade 10*$decade 5*$decade;
+
+	@extend .full-width;
+	@extend .full-height;
+	@include flex-container($flow: row wrap, $justify: space-between);
+}
+
+.cardsSection {
+	flex: 1 0 150px;
+	overflow-y: hidden;
+	background: $background-default;
+}

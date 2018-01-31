@@ -16,3 +16,8 @@ export default  {
 	LOCATION,
 	TEAM,
 }
+
+export const DETAIL_TYPE_TO_DISPLAY_VALUE = {
+  [TEAM]: 'Team',
+  [TITLE]: 'Title',
+};

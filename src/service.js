@@ -23,7 +23,13 @@ export function post(url, payload) {
 }
 
 export function put(url, payload) {
-	return axios.put(PROXY_URL + BASE_URL + url, payload)
+  const options = {
+    method: "PUT",
+    uri: PROXY_URL + BASE_URL + url,
+    body: payload,
+    json: true
+  }
+	return request(options);
 }
 
 export default {

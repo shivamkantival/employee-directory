@@ -6,7 +6,7 @@ import s from './ActionBar.mod.scss';
 
 //components
 import {Button, ButtonToolbar} from 'react-bootstrap';
-import AddUserForm from 'components/organisms/AddOrEditUserForm';
+import AddUserForm from 'components/organisms/AddUserForm';
 import FilterUserListForm from 'components/organisms/FilterUserForm';
 
 class ActionBar extends PureComponent {
