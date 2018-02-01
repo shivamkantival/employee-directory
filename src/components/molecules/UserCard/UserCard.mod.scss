@@ -40,7 +40,7 @@ $distance-of-details-from-sides: 2*$decade;
 .profileImagePlaceHolder {
 	position: absolute;
 	top: 5*$decade;
-	left: 10*$decade;
+	right: 3*$decade;
 	border-radius: 50%;
 	border: white solid .5*$decade;
 	overflow: hidden;
@@ -55,7 +55,7 @@ $distance-of-details-from-sides: 2*$decade;
 .detailsBox {
 	position: absolute;
 	bottom: 0;
-	padding: 7*$decade .5*$decade 2*$decade;
+	padding: 7*$decade 0 2*$decade;
 	height: 25*$decade;
 
 	@extend .full-width;
