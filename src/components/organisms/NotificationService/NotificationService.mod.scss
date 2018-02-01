@@ -1,0 +1,108 @@
+@import "utilStyles";
+@import "utilMixins";
+
+$default-animation-time: 500ms;
+$max-z-index: 10000;
+$max-notif-height: 6*$decade;
+
+.notificationContainer {
+	z-index: $max-z-index;
+	position: absolute;
+	top: 4*$decade;
+	right: 3*$decade;
+	width: 30*$decade;
+}
+
+.notificationCardContainer {
+	height: $max-notif-height;
+	cursor: pointer;
+}
+
+//used for classnames purpose
+.animation {
+	opacity: 1;
+}
+
+.animation-enter {
+	height: 0;
+	opacity: 0;
+
+	&.animation-enter-active {
+		-webkit-animation: enter $default-animation-time ease-out;
+		animation: enter $default-animation-time ease-out;
+		position: relative;
+	}
+}
+
+@-webkit-keyframes enter {
+	from {
+		opacity: 0;
+		height: 0;
+		right: -20px;
+	}
+	75% {
+		right: 15px;
+	}
+	to {
+		opacity: 1;
+		height: $max-notif-height;
+		right: 0;
+	}
+}
+@keyframes enter {
+	from {
+		opacity: 0;
+		height: 0;
+		right: -20px;
+	}
+	75% {
+		right: 15px;
+	}
+	to {
+		opacity: 1;
+		height: $max-notif-height;
+		right: 0;
+	}
+}
+
+.animation-exit {
+	height: 6*$decade;
+	opacity: 1;
+
+	&.animation-exit-active {
+		-webkit-animation: leave $default-animation-time ease-out;
+		animation: leave $default-animation-time ease-out;
+		position: relative;
+	}
+}
+
+	@-webkit-keyframes leave {
+		to {
+			opacity: 0;
+			height: 0;
+			right: -20px;
+		}
+		25% {
+			right: 15px;
+		}
+		from {
+			opacity: 1;
+			height: $max-notif-height;
+			right: 0;
+		}
+	}
+	@keyframes leave {
+		to {
+			opacity: 0;
+			height: 0;
+			right: -20px;
+		}
+		25% {
+			right: 15px;
+		}
+		from {
+			opacity: 1;
+			height: $max-notif-height;
+			right: 0;
+		}
+	}
