@@ -1,16 +1,59 @@
 @import "utilStyles";
 @import "utilMixins";
 
-.actionBarContainer {
-	background-color: $overcast;
-	padding: $decade;
-	flex: 0 0 7*$decade;
+$left-offset: 30px;
+$skew-deg: 20deg;
+$skew: skew(-$skew-deg);
 
-	@include flex-container($justify: space-around);
-	@extend .center-x-y;
+.antiSkew {
+	transform: skew($skew-deg);
+}
+
+.actionBar {
+	position: relative;
+	flex: 0 0 7*$decade;
+}
+
+.infoSection {
+	padding-left: $app-side-margins + $left-offset;
+	width: 60%;
+	position: absolute;
+	left: -$left-offset;
+	background: $overcast;
+	transform: $skew;
+	z-index: 1;
+
+	@extend .center-y;
+	@extend .full-height;
+}
+
+.infoDetailsAlignment {
+	font-size: large;
+
+	@extend .antiSkew;
+	@include flex-container($justify: flex-start, $align-items: center);
+}
+
+.infoText {
+	margin-left: 2*$decade;
+}
+
+.actionSection {
+	width: 50%;
+	position: absolute;
+	right: 0;
+	background: $pale-white;
+	padding-right: $app-side-margins;
+
+	@include flex-container($justify: flex-end, $align-items: center);
+	@extend .full-height;
+}
+
+.actionsContainer {
+
 }
 
 .actionButton {
-	width: 25*$decade !important;
+	width: 12*$decade !important;
 	margin: 0 3*$decade;
 }

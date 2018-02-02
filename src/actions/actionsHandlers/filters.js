@@ -14,9 +14,15 @@ import {
 import {
   adaptUserDetailsForQuery,
 } from 'utils/userDetails';
+import _isEmpty from 'lodash/isEmpty';
 
 //service
 import assetService from 'service';
+import eventManager from 'utils/eventManager';
+
+//constants
+import EVENT_TYPES from 'constants/eventTypes';
+import NOTIFICATION_TYPES from 'constants/notificationTypes';
 
 export const applyFilters = filters => dispatch => {
 	const applyFilterAction = createApplyFilterAction(filters);
@@ -30,8 +36,16 @@ export const applyFilters = filters => dispatch => {
 	assetService.get(`?${queryParams}`)
 		.then(userDetails => {
 			dispatch(createLoadedDetailsAction(userDetails || []));
+			_isEmpty(userDetails) && eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
+			  type: NOTIFICATION_TYPES.SUCCESS,
+        message: 'No users present for given filter',
+      })
 		})
 		.catch(err => {
       dispatch(createErrorWhileLoadingAction());
+      eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
+        type: NOTIFICATION_TYPES.ERROR,
+        message: 'Sorry!!, couldn\'t filter due to bad network',
+      })
 		});
-}
+};

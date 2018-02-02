@@ -3,6 +3,7 @@
 
 $max-content-width: 24*$decade;
 $distance-of-details-from-sides: 2*$decade;
+$card-border-color: $fresh;
 
 .verticalFlexContainerWithCenteredElements {
 	@include flex-container($flow: column nowrap, $justify: start, $align-items: center);
@@ -12,8 +13,8 @@ $distance-of-details-from-sides: 2*$decade;
 	flex: 0 0 27*$decade;
 	height: 35*$decade;
 	margin-bottom: 5*$decade;
-	margin-right: 3*$decade;
-	border: $fresh .5*$decade solid;
+	margin-right: 2*$decade;
+	border: $card-border-color .5*$decade solid;
 	border-radius: $decade;
 	background: white;
 	transition: opacity 500ms ease-in-out;
@@ -29,7 +30,7 @@ $distance-of-details-from-sides: 2*$decade;
 	position: relative;
 	height: 10*$decade;
 
-	background-color: $fresh;
+	background-color: $card-border-color;
 }
 
 .imageSize {

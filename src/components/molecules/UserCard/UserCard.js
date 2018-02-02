@@ -8,7 +8,7 @@ import fallbackProfileImage from 'assets/man.svg';
 import EditUserForm from 'components/organisms/EmployeeDetailsForm';
 import {Transition} from 'react-transition-group';
 import PlaceholderImage from 'components/atoms/PlaceholderImage';
-import {OverlayTrigger, Popover} from 'react-bootstrap';
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 //styles
 import s from './UserCard.mod.scss';
@@ -24,16 +24,16 @@ import {
 //constants
 import USER_DETAIL_TYPES, {DETAIL_TYPE_TO_DISPLAY_VALUE} from 'constants/userDetailTypes';
 
-function renderPopover(header, value) {
-  return (<Popover id={`popover-${header}`} title={header}>
+function renderTooltip(header, value) {
+  return (<Tooltip id={`tooltip-${header}`} placement="top" className="in" >
     <strong>{value}</strong>
-  </Popover>)
+  </Tooltip>)
 }
 
 function renderTeamDetail(detail, userDetails) {
   const detailTypeToView = DETAIL_TYPE_TO_DISPLAY_VALUE[detail],
     detailValue = userDetails[detail];
-  return detailValue && (<OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={renderPopover(detailTypeToView, detailValue)}>
+  return detailValue && (<OverlayTrigger trigger={['hover']} placement="top" overlay={renderTooltip(detailTypeToView, detailValue)}>
       <span className={s.teamDetail}>{`${detailTypeToView} : ${detailValue}`}</span>
     </OverlayTrigger>
   )

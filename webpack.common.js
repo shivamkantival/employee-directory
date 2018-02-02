@@ -9,7 +9,7 @@ module.exports = {
 		app: './src/index.js',
 	},
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
+		// new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'Production',
 			template: 'src/index.html',
@@ -80,7 +80,7 @@ module.exports = {
 				use: ['style-loader', 'css-loader'],
 			},
 			{
-				test: /\.(eot|svg|ttf|woff|woff2)$/,
+				test: /\.(eot|svg|ttf|woff|woff2|png)$/,
 				loader: 'file-loader',
 			},
 		],
