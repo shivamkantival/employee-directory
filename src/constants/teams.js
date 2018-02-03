@@ -1,6 +1,6 @@
 
 export const TEAMLESS = {
-		label: 'Teamless',
+		label: 'Not defined',
 		value: 'Teamless',
 	},
 	CUSTOM_RELATIONS = {

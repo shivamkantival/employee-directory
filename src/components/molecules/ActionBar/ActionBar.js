@@ -41,19 +41,26 @@ class ActionBar extends PureComponent {
     );
   };
   
+  renderActionButtons = () => {
+    const that = this;
+    return (
+      <ButtonToolbar>
+        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowAddUser} >
+          Add Employee
+        </Button>
+        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowFilters} >
+          Apply Filters
+        </Button>
+      </ButtonToolbar>
+    )
+  }
+  
   renderActions = () => {
     const that = this,
       {showFilters, showAddUser} = this.state;
     return (
       <section className={s.actionSection}>
-        <ButtonToolbar>
-          <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowAddUser} >
-            Add Employee
-          </Button>
-          <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowFilters} >
-            Apply Filters
-          </Button>
-        </ButtonToolbar>
+        {that.renderActionButtons()}
         {showFilters && <FilterUserListForm onCancel={that.toggleShowFilters} />}
         {showAddUser && <AddUserForm onCancel={that.toggleShowAddUser} />}
       </section>

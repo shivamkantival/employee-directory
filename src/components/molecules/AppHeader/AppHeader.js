@@ -10,7 +10,7 @@ import ICONS_CONFIG from './iconsConfig';
 const iconsBackgroundColor = '#9099a2';
 
 function renderImage(imageInfo) {
-  return <HoverIcon backgroundColor={iconsBackgroundColor} key={imageInfo.id} image={imageInfo.icon} />
+  return <HoverIcon backgroundColor={iconsBackgroundColor} key={imageInfo.id} image={imageInfo.icon} source={imageInfo.linkUrl} />
 };
 
 function AppHeader (props){

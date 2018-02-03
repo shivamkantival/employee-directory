@@ -20,6 +20,6 @@ $transition-time: 300ms;
 
 	// cause we can only capture sibling renderer next to us in DOM
 	&:hover + .iconBackground {
-		opacity: 0.4;
+		opacity: 0.3;
 	}
 }

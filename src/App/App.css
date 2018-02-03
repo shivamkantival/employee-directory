@@ -20,3 +20,9 @@ html, body {
 .pos-abs {
     position: absolute !important;
 }
+
+.alert-success-alt {
+    border-color: #1f83c1;
+    background: #1f83c1;
+    color: white;
+}

@@ -66,12 +66,12 @@ class DynamicImageLoader extends PureComponent {
       props = that.props,
       source = props.source;
 
-    let elem;
+    let loadingStatus;
 
     if (error) {
-      elem = (<div className={classnames(s.errorStyles)}>Image not found</div>);
+      loadingStatus = (<div className={classnames(s.errorStyles)}>Image not found</div>);
     } else if (loading) {
-      elem = (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />);
+      loadingStatus = (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />);
     }
 
     return (<div className={props.containerClassName}>
@@ -84,7 +84,7 @@ class DynamicImageLoader extends PureComponent {
         fallbackImg={props.fallbackImg}
         hasError={error}
       />
-      {elem}
+      {loadingStatus}
     </div>);
   }
 }

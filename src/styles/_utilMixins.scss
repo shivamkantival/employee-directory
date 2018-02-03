@@ -1,10 +1,13 @@
+@import "utilStyles";
+
 
 @mixin flex-container($flow: row nowrap, $justify: space-between, $align-items: stretch, $align-content: flex-start) {
   align-content: $align-content;
   align-items: $align-items;
-  display: flex;
   flex-flow: $flow;
   justify-content: $justify;
+
+	@extend .flex;
 }
 
 @mixin border-radius($value) {

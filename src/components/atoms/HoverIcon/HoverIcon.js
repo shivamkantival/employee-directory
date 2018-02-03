@@ -15,14 +15,20 @@ const SIZE_TO_CONTAINER_SIZE = {
   [ICON_SIZES.LARGE]: '60px',
 };
 
+const cursorStyle = {
+  cursor: 'pointer',
+};
+
 function HoverIcon(props) {
-  const {backgroundColor, image, iconSize} = props,
+  const {backgroundColor, image, iconSize, source} = props,
     iconDimension = SIZE_TO_CONTAINER_SIZE[iconSize || ICON_SIZES.MEDIUM];
   
   return (
     <div style={{width: iconDimension, height: iconDimension}} className={'pos-rel'}>
-      <img src={image} className={s.image}/>
-      <div style={{backgroundColor: backgroundColor}} className={s.iconBackground} />
+      <a href={source} target="_blank" >
+        <img src={image} className={s.image} />
+        <div style={{backgroundColor: backgroundColor}} className={s.iconBackground} />
+      </a>
     </div>)
 }
 
@@ -30,6 +36,7 @@ HoverIcon.propTypes = {
   backgroundColor: PropTypes.string,
   image: PropTypes.string,
   iconSize: PropTypes.string,
+  source: PropTypes.string,
 }
 
 export default pure(HoverIcon);

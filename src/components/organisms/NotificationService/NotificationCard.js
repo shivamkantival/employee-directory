@@ -15,7 +15,7 @@ import NOTIFICATION_TYPES from 'constants/notificationTypes';
 
 const DEFAULT_TIMEOUT = 3000,
   NOTIF_TYPE_TO_ALERT_COLOR = new Map([
-    [NOTIFICATION_TYPES.SUCCESS, 'info'],
+    [NOTIFICATION_TYPES.SUCCESS, 'success-alt'],
     [NOTIFICATION_TYPES.ERROR, 'danger'],
     [NOTIFICATION_TYPES.DEFAULT, 'primary'],
   ]);

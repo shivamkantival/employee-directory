@@ -49,9 +49,9 @@ class UserCard extends PureComponent {
   };
   
   renderDetails = () => {
-    const {userDetails} = this.props;
+    const {userDetails} = this;
     return(<div className={s.detailsBox}>
-      <span style={{color: `#${userDetails[USER_DETAIL_TYPES.COLOR]}`}} className={s.userName}>{getFullName(userDetails)}</span>
+      <span style={{color: userDetails[USER_DETAIL_TYPES.COLOR]}} className={s.userName}>{getFullName(userDetails)}</span>
       <span className={s.locationContainer}>{getFormattedLocation(userDetails)}</span>
       <div className={s.teamDetailsContainer}>
         {renderTeamDetail(USER_DETAIL_TYPES.TEAM, userDetails)}
@@ -68,18 +68,28 @@ class UserCard extends PureComponent {
   
   handleSave = updatedUser => {
     this.props.onUpdate(updatedUser);
-  }
+  };
   
   renderUpdateOption = () => {
     const {userDetails, onUpdate} = this.props;
     return (<span onClick={this.toggleEditableForm} className={s.updateOption}>
-      Update details -
+      Update details
     </span>)
+  };
+  
+  renderEditingForm = () => {
+    const that = this;
+    return that.state.showEditableForm && (<EditUserForm
+      onCancel={that.toggleEditableForm}
+      onSave={that.handleSave}
+      initialValue={that.userDetails}
+    />);
   };
   
   renderCard = state => {
     const that = this,
       props = that.props;
+    that.userDetails = adaptUserDetailsForDisplay(props.userDetails);
     return (<div className={classnames(s.userCardContainer, 'pos-rel', s[state])}>
       <div className={s.cardTopBackground}></div>
       <PlaceholderImage
@@ -92,11 +102,7 @@ class UserCard extends PureComponent {
       />
       {that.renderDetails()}
       {that.renderUpdateOption()}
-      {that.state.showEditableForm && <EditUserForm
-        onCancel={that.toggleEditableForm}
-        onSave={that.handleSave}
-        initialValue={adaptUserDetailsForDisplay(props.userDetails)}
-      />}
+      {that.renderEditingForm()}
     </div>);
   }
   
@@ -104,8 +110,8 @@ class UserCard extends PureComponent {
     const {emploeeDetails} = this.props;
     
     return (<Transition in appear exit="false" unmountOnExit timeout={450} >
-        {this.renderCard}
-      </Transition>)
+      {this.renderCard}
+    </Transition>)
   }
 }
 
