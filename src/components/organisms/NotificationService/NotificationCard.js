@@ -20,6 +20,10 @@ const DEFAULT_TIMEOUT = 3000,
     [NOTIFICATION_TYPES.DEFAULT, 'primary'],
   ]);
 
+/**
+ * uses custom pausable and cancellable timer, notifications are paused even hovered and are canceled when clicked upon
+ * notifications stay on screen for 3 sec by default
+ */
 class NotificationCard extends PureComponent {
   
   componentDidMount() {

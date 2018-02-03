@@ -9,15 +9,15 @@ export const SIZES = {
 	lg: "30px",
 };
 
-function AppLoader(props) {
+function InlineLoader(props) {
 	return (
 		<Loader className={props.loaderClass} color="#4DAF7C" size={props.size} margin="5px" />
 	)
 }
 
-AppLoader.propTypes = {
+InlineLoader.propTypes = {
 	loaderClass: PropTypes.string,
 	size: PropTypes.string,
-}
+};
 
-export default AppLoader;
+export default InlineLoader;

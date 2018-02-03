@@ -19,6 +19,8 @@ const cursorStyle = {
   cursor: 'pointer',
 };
 
+
+//renders an image with a background that is visible only on hover
 function HoverIcon(props) {
   const {backgroundColor, image, iconSize, source} = props,
     iconDimension = SIZE_TO_CONTAINER_SIZE[iconSize || ICON_SIZES.MEDIUM];

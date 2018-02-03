@@ -37,12 +37,13 @@ class FormBody extends PureComponent {
   }
   
   renderFieldsSection () {
-    const {FormFieldsRenderer, onValidate, onChange, value, config} = this.props;
+    const {FormFieldsRenderer, onValidate, onChange, value, config, forceValidate} = this.props;
     return (<FormFieldsRenderer
       config={config}
       value={value}
       onValidate={onValidate}
       onChange={onChange}
+      forceValidate={forceValidate}
     />)
   }
   

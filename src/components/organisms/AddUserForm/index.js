@@ -9,6 +9,8 @@ import {
 
 import EmployeeDetailsForm from '../EmployeeDetailsForm';
 
+
+//simple wrapper over employeeDetailsForm to handle save and initiate values
 class AddUserForm extends PureComponent {
 	render() {
 		return (<EmployeeDetailsForm

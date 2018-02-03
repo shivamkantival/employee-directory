@@ -18,6 +18,10 @@ function AnimatedNotification({children, ...props}) {
   </CSSTransition>)
 }
 
+
+/**
+ * each notification animates into the window, stays for given timeout and leaves with a smooth transition
+ */
 class NotificationService extends PureComponent {
   
   renderNotification = notification => {

@@ -7,6 +7,7 @@ import {Image} from 'react-bootstrap';
 //utils
 import {pure} from 'recompose';
 
+//renders an image that shows the placeholder while loading actual image or if actual image is not available due to some reason
 function PlaceholderImage(props) {
   const {imageStyles, source, onLoad, onError, hasError, fallbackImg, placeholderStyle} = props;
   

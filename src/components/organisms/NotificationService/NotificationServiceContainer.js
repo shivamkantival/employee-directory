@@ -10,6 +10,10 @@ import {SHOW_NOTIF} from 'constants/eventTypes';
 //components
 import NotificationService from './NotificationService';
 
+/**
+ * uses custom event manager and provides system wide unified pusher notifications
+ * anyone from across the platform can show notification by throwing a simple SHOW_NOTIF event
+ */
 class NotificationServiceContainer extends PureComponent {
     constructor(props) {
         super(props);

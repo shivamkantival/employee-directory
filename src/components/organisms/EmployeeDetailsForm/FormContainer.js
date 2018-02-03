@@ -11,12 +11,19 @@ import getFormRenderer from 'components/molecules/FormsRenderer';
 
 const FormFieldsRenderer = getFormRenderer(fields, validate);
 
+
+/**
+ * uses generic form renderer to render form with just providing the names of the field and config
+ *
+ *  Also shows live update for the image, name and color selected
+ */
 class EmployeeDetailsFormContainer extends PureComponent {
 	constructor(props) {
 		super(props);
 		this.state = {
 			value: props.initialValue,
 			isValid: true,
+      forceValidate: false,
 		}
 	}
 	
@@ -24,9 +31,13 @@ class EmployeeDetailsFormContainer extends PureComponent {
 		const that = this,
 			{isValid, value} = that.state,
 			onSave = that.props.onSave;
-		if (isValid && onSave) {
-			onSave(value);
-		}
+		
+		if (!isValid) {
+		  that.setState({forceValidate: true});
+		  return;
+    }
+    
+    onSave &&	onSave(value);
 		that.onCancel();
 	};
 	
@@ -46,7 +57,10 @@ class EmployeeDetailsFormContainer extends PureComponent {
 	
 	onReset = () => {
 		const that = this;
-		that.setState({value: that.props.initialValue});
+		that.setState({
+      value: that.props.initialValue,
+      forceValidate: false,
+    });
 	};
 	
 	onCancel = () => {
@@ -62,6 +76,7 @@ class EmployeeDetailsFormContainer extends PureComponent {
 		return (<FormRenderer
 			{...that.state}
 			onValidate={that.onValidate}
+      forceValidate={that.state.forceValidate}
 			onSave={that.onSave}
 			onChange={that.onChange}
 			onReset={that.onReset}

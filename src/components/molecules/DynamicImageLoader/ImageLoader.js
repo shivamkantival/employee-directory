@@ -14,6 +14,12 @@ import PlaceholderImage from 'components/atoms/PlaceholderImage';
 const FALLBACK = 'fallback',
   SOURCE = 'source';
 
+
+/**
+ * renders images where source of the image is dynamically changing,
+ * a fallBack image can be provided to render for the time when new image is loading,
+ *
+ */
 class DynamicImageLoader extends PureComponent {
   constructor(props) {
     super(props);
@@ -66,13 +72,9 @@ class DynamicImageLoader extends PureComponent {
       props = that.props,
       source = props.source;
 
-    let loadingStatus;
-
-    if (error) {
-      loadingStatus = (<div className={classnames(s.errorStyles)}>Image not found</div>);
-    } else if (loading) {
-      loadingStatus = (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />);
-    }
+    //shows error if error occured, else shows loader if is currently loading
+    const loadingStatus = (error && (<div className={classnames(s.errorStyles)}>Image not found</div>))
+      || (loading && (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />));
 
     return (<div className={props.containerClassName}>
       <PlaceholderImage

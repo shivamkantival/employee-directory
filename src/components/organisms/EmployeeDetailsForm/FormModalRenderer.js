@@ -8,7 +8,7 @@ import FormBody from './FormBody';
 //styles
 import s from './EmployeeDetailsForm.mod.scss';
 
-const DEFAULT_FORM_LABEL = 'Employee Details';
+const DEFAULT_FORM_LABEL = 'Employee Details (All details are needed)';
 const DEFAULT_SUCCESS_LABEL = 'Save';
 
 class EmployeeDetailsForm extends PureComponent{
@@ -35,13 +35,13 @@ class EmployeeDetailsForm extends PureComponent{
 				<Button
 					onClick={props.onSave}
 					bsStyle="success"
-					disabled={!props.isValid}
 					bsSize="small"
 				>
 					{props.successLabel || DEFAULT_SUCCESS_LABEL}
 				</Button>
 			</ButtonToolbar>
 		</Modal.Footer>)
+					// disabled={!props.isValid}
 	}
 	
 	render() {
