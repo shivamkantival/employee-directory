@@ -7,7 +7,7 @@
 
 	@extend .full-width;
 	@extend .full-height;
-	@include flex-container($flow: row wrap, $justify: space-between);
+	@include flex-container($flow: row wrap, $justify: space-evenly);
 }
 
 .cardsSection {
