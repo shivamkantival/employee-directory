@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49b5e848-93f1-45e4-8c92-9c88eb066943" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/service/index.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.js" afterPath="$PROJECT_DIR$/src/App/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.mod.scss" afterPath="$PROJECT_DIR$/src/App/App.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Alert.js" afterPath="$PROJECT_DIR$/src/components/atoms/Alert.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/BaseFieldRenderer.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/BaseFieldRenderer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/ColorSelect.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/ColorSelect.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/FormFields.mod.scss" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/FormFields.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/SingleSelect.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/SingleSelect.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/TextInput.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/TextInput.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" afterPath="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" afterPath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" afterPath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js" afterPath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js" afterPath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" afterPath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/service.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_utilStyles.scss" afterPath="$PROJECT_DIR$/src/styles/_utilStyles.scss" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change beforePath="$PROJECT_DIR$/webpack.common.js" afterPath="$PROJECT_DIR$/webpack.common.js" />
+      <change beforePath="$PROJECT_DIR$/webpack.prod.js" afterPath="$PROJECT_DIR$/webpack.prod.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,50 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserCardsContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="72" column="2" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/eventManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pausableTimer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/pausableTimer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="userDetails.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/userDetails.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,14 +39,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.dev.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.prod.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.prod.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/actions/creators/userDetails.js" />
         <option value="$PROJECT_DIR$/src/components/organisms/EditUserForm/index.js" />
         <option value="$PROJECT_DIR$/src/actions/reducers/employeeDetails.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -186,17 +172,14 @@
         <option value="$PROJECT_DIR$/src/utils/pausableTimer.js" />
         <option value="$PROJECT_DIR$/src/constants/notificationTypes.js" />
         <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationServiceContainer.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/actions/actionsHandlers/filters.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.js" />
         <option value="$PROJECT_DIR$/src/actions/actionsHandlers/employeeDetails.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/IconsBar/package.json" />
         <option value="$PROJECT_DIR$/src/components/molecules/IconsBar/IconsBar.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/package.json" />
         <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.json" />
         <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/sizeConstants.js" />
-        <option value="$PROJECT_DIR$/webpack.common.js" />
         <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.js" />
         <option value="$PROJECT_DIR$/src/styles/_utilMixins.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/iconsConfig.js" />
@@ -228,6 +211,10 @@
         <option value="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" />
         <option value="$PROJECT_DIR$/src/service.js" />
         <option value="$PROJECT_DIR$/src/service/index.js" />
+        <option value="$PROJECT_DIR$/webpack.common.js" />
+        <option value="$PROJECT_DIR$/webpack.prod.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -332,6 +319,12 @@
               <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
               <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
@@ -456,17 +449,18 @@
       <workItem from="1517584836935" duration="554000" />
       <workItem from="1517586182191" duration="3000" />
       <workItem from="1517594966235" duration="9786000" />
-      <workItem from="1517639920658" duration="2526000" />
+      <workItem from="1517639920658" duration="3302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147377000" />
+    <option name="totallyTimeSpent" value="148153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
@@ -474,7 +468,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -500,51 +494,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#133#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/actionsHandlers/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#37#73#0" expanded="false" />
-            <element signature="e#228#283#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/App.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -939,16 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -961,6 +900,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding />
         </state>
       </provider>

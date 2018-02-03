@@ -9,7 +9,7 @@ module.exports = {
 		app: './src/index.js',
 	},
 	plugins: [
-		// new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'Production',
 			template: 'src/index.html',
