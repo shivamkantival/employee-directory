@@ -2,13 +2,9 @@
 @import "utilStyles";
 
 .overlayContainer {
-	position: absolute;
-	top: 0;
-	left: 0;
 	background: $pale-white;
 	opacity: .7;
 
-	@extend .full-width;
-	@extend .full-height;
+	@extend .full-size-absolute-child;
 	@extend .center-x-y;
 }

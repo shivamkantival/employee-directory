@@ -8,20 +8,20 @@ import {Label} from 'reactstrap';
 import s from './FormFields.mod.scss';
 
 function TextInput(props) {
-	const {id, label, fieldClass, showError, error} = props;
-	return (<div className={`${s.fieldsContainer} ${fieldClass}`} >
-		<Label for={id} className={s.labelStyles}>{label}</Label>
-		{props.children}
-		{showError && (<span className={s.errorStyles}>{`-	${error}`}</span>)}
-	</div>);
+  const {id, label, fieldClass, showError, error} = props;
+  return (<div className={`${s.fieldsContainer} ${fieldClass}`} >
+    <Label for={id} className={s.labelStyles}>{label}</Label>
+    {props.children}
+    {showError && (<span className={s.errorStyles}>{`-	${error}`}</span>)}
+  </div>);
 }
 
 TextInput.propTypes = {
-	id: PropTypes.string,
-	label: PropTypes.string,
-	fieldClass: PropTypes.string,
-	showError: PropTypes.bool,
-	error: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string,
+  fieldClass: PropTypes.string,
+  showError: PropTypes.bool,
+  error: PropTypes.string,
 };
 
 export default TextInput;

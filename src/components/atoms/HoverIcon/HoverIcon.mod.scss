@@ -1,19 +1,15 @@
 @import "utilStyles";
 @import "utilMixins";
 
-$transition-time: 500ms;
+$transition-time: 300ms;
 
 .iconBackground {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0;
 	border-radius: 50%;
 	transition: opacity $transition-time ease-out;
-
 	z-index: -1; // needed to make image capture hover
+
+	@extend .full-size-absolute-child;
 }
 
 .image {
@@ -24,6 +20,6 @@ $transition-time: 500ms;
 
 	// cause we can only capture sibling renderer next to us in DOM
 	&:hover + .iconBackground {
-		opacity: 0.3;
+		opacity: 0.4;
 	}
 }

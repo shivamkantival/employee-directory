@@ -47,3 +47,11 @@ $background-default: #f1f1f1;
 .full-width {
   width: 100%;
 }
+
+.full-size-absolute-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

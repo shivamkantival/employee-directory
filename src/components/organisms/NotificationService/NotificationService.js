@@ -37,4 +37,9 @@ class NotificationService extends PureComponent {
   }
 }
 
+NotificationService.propTypes = {
+  onRemove: PropTypes.func,
+  notifications: PropTypes.array,
+}
+
 export default NotificationService;

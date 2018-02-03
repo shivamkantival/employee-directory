@@ -51,7 +51,7 @@ class UserCardsContainer extends PureComponent {
       <section className={s.cardsContainer}>
         {users.map(this.renderCard)}
       </section>
-      <OverlayLoader show={loading} z-index="5" />
+      <OverlayLoader show={loading} zIndex="5" />
     </div>);
   }
 }
@@ -64,6 +64,13 @@ function mapStateToProps(state) {
     users: employeeDetailsState.data,
   }
 }
+
+UserCardsContainer.propTypes = {
+  loading: PropTypes.bool,
+  loaded: PropTypes.bool,
+  fetchAllUsers: PropTypes.func,
+  updateUser: PropTypes.func,
+};
 
 export default connect(
   mapStateToProps,

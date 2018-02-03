@@ -3,7 +3,7 @@
 
 .cardsContainer {
 	overflow-y: scroll;
-	padding: 5*$decade $app-side-margins 5*$decade;
+	padding: 5*$decade $app-side-margins 0;
 
 	@extend .full-width;
 	@extend .full-height;

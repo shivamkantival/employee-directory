@@ -1,9 +1,8 @@
 @import "utilStyles";
 @import "utilMixins";
 
-$left-offset: 30px;
+$left-offset-to-handle-skew: 30px;
 $skew-deg: 20deg;
-$skew: skew(-$skew-deg);
 
 .antiSkew {
 	transform: skew($skew-deg);
@@ -15,12 +14,12 @@ $skew: skew(-$skew-deg);
 }
 
 .infoSection {
-	padding-left: $app-side-margins + $left-offset;
+	padding-left: $app-side-margins + $left-offset-to-handle-skew;
 	width: 60%;
 	position: absolute;
-	left: -$left-offset;
+	left: -$left-offset-to-handle-skew;
 	background: $overcast;
-	transform: $skew;
+	transform: skew(-$skew-deg);
 	z-index: 1;
 
 	@extend .center-y;
@@ -47,10 +46,6 @@ $skew: skew(-$skew-deg);
 
 	@include flex-container($justify: flex-end, $align-items: center);
 	@extend .full-height;
-}
-
-.actionsContainer {
-
 }
 
 .actionButton {

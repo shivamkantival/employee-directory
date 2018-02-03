@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React from 'react';
 
 //styles
 import classnames from 'classnames';
@@ -14,17 +14,15 @@ import UserDetailsContainer from 'components/organisms/UserCardsContainer';
 import NotificationService from 'components/organisms/NotificationService';
 
 
-export default class App extends PureComponent {
-	
-  render() {
-    return (<div className={classnames(s.appContainer, 'pos-rel')}>
-      <div className={s.appBody}>
-        <AppHeader/>
-        <ActionBar/>
-        <UserDetailsContainer />
-      </div>
-      <NotificationService/>
-		</div>)
-  }
-	
+function App(props) {
+  return (<div className={classnames(s.appContainer, 'pos-rel')}>
+    <div className={s.appContent}>
+      <AppHeader/>
+      <ActionBar/>
+      <UserDetailsContainer />
+    </div>
+    <NotificationService/>
+  </div>);
 }
+
+export default App;

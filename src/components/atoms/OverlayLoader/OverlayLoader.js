@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import PropTypoes from 'prop-types';
+import PropTypes from 'prop-types';
 
 //styles
 import s from './OverlayLoader.mod.scss';
@@ -8,9 +8,14 @@ import s from './OverlayLoader.mod.scss';
 import Loader from 'halogen/SyncLoader';
 
 function OverlayLoader(props) {
-  return props.show && (<div className={s.overlayContainer} style={{"z-index": props['z-index'] || 1}} >
+  return props.show && (<div className={s.overlayContainer} style={{"z-index": props.zIndex || 1}} >
     <Loader color="#4abdac" size="16px" />
   </div>)
 }
+
+OverlayLoader.propTypes = {
+  show: PropTypes.bool,
+  zIndex: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+};
 
 export default OverlayLoader;

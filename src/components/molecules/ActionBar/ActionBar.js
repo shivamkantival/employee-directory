@@ -30,28 +30,41 @@ class ActionBar extends PureComponent {
     this.setState({showFilters: !this.state.showFilters});
   };
   
-  render() {
-    const that = this,
-      {showFilters, showAddUser} = that.state;
-    return(<div className={s.actionBar}>
+  renderInfoSection = () => {
+    return (
       <section className={s.infoSection}>
         <div className={s.infoDetailsAlignment}>
           <HoverIcon backgroundColor={'#e1e3e8'} image={empDirImage} iconSize={'LARGE'}/>
           <span className={s.infoText}>Meet and manage your employees</span>
         </div>
       </section>
+    );
+  };
+  
+  renderActions = () => {
+    const that = this,
+      {showFilters, showAddUser} = this.state;
+    return (
       <section className={s.actionSection}>
-          <ButtonToolbar>
-            <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowAddUser} >
-              Add Employee
-            </Button>
-            <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowFilters} >
-              Apply Filters
-            </Button>
-          </ButtonToolbar>
+        <ButtonToolbar>
+          <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowAddUser} >
+            Add Employee
+          </Button>
+          <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowFilters} >
+            Apply Filters
+          </Button>
+        </ButtonToolbar>
         {showFilters && <FilterUserListForm onCancel={that.toggleShowFilters} />}
         {showAddUser && <AddUserForm onCancel={that.toggleShowAddUser} />}
       </section>
+    );
+  }
+  
+  render() {
+    const that = this;
+    return(<div className={s.actionBar}>
+      {that.renderInfoSection()}
+      {that.renderActions()}
     </div>)
   }
 }

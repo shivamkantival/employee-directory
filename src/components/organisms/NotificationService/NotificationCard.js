@@ -1,4 +1,6 @@
 import React, {PureComponent} from 'react';
+import PropTypes from 'prop-types';
+
 //styles
 import s from './NotificationService.mod.scss';
 
@@ -57,6 +59,11 @@ class NotificationCard extends PureComponent {
       </Alert>
     </div>)
   }
+}
+
+NotificationCard.propTypes = {
+  notification: PropTypes.object,
+  onRemove: PropTypes.func,
 }
 
 export default NotificationCard;

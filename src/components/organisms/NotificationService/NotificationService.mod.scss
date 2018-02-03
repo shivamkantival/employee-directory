@@ -65,7 +65,7 @@ $max-notif-height: 6*$decade;
 }
 
 .animation-exit {
-	height: 6*$decade;
+	height: $max-notif-height;
 	opacity: 1;
 
 	&.animation-exit-active {

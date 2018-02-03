@@ -2,28 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49b5e848-93f1-45e4-8c92-9c88eb066943" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/HoverIcon/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/atoms/HoverIcon/sizeConstants.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/molecules/AppHeader/iconsConfig.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/service/index.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actionsHandlers/employeeDetails.js" afterPath="$PROJECT_DIR$/src/actions/actionsHandlers/employeeDetails.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actionsHandlers/filters.js" afterPath="$PROJECT_DIR$/src/actions/actionsHandlers/filters.js" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.js" afterPath="$PROJECT_DIR$/src/App/App.js" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.mod.scss" afterPath="$PROJECT_DIR$/src/App/App.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Alert.js" afterPath="$PROJECT_DIR$/src/components/atoms/Alert.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/BaseFieldRenderer.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/BaseFieldRenderer.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/ColorSelect.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/ColorSelect.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/FormFields.mod.scss" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/FormFields.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/SingleSelect.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/SingleSelect.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/FormFields/TextInput.js" afterPath="$PROJECT_DIR$/src/components/atoms/FormFields/TextInput.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" afterPath="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" afterPath="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" afterPath="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" afterPath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js" afterPath="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.js" afterPath="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.mod.scss" afterPath="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.mod.scss" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js" afterPath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js" afterPath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" afterPath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss" afterPath="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/service.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/styles/_utilStyles.scss" afterPath="$PROJECT_DIR$/src/styles/_utilStyles.scss" />
-      <change beforePath="$PROJECT_DIR$/webpack.common.js" afterPath="$PROJECT_DIR$/webpack.common.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,67 +40,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_utilStyles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/_utilStyles.scss">
+      <file leaf-file-name="UserCardsContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_utilMixins.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/_utilMixins.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="64" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppHeader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="546">
+              <caret line="72" column="2" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
-                <element signature="e#133#184#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js">
+      <file leaf-file-name="eventManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/eventManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-              <folding>
-                <element signature="e#54#90#0" expanded="true" />
-                <element signature="e#143#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionBar.mod.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserCardsContainer.mod.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss">
+      <file leaf-file-name="pausableTimer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/pausableTimer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userDetails.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/userDetails.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validators.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/validators.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,7 +151,6 @@
       <find>ButtonToolbar</find>
       <find>applyFilters</find>
       <find>s</find>
-      <find>props</find>
       <find>engines</find>
       <find>components/atoms/AppLoader</find>
       <find>errorStyles</find>
@@ -133,6 +165,10 @@
       <find>vers</find>
       <find>pop</find>
       <find>$padding-from-ends</find>
+      <find>$skew</find>
+      <find>classnames</find>
+      <find>sampleImage</find>
+      <find>props</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,39 +177,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeCardsContainer/EmployeeCardsContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.mod.scss" />
-        <option value="$PROJECT_DIR$/src/components/molecules/EmployeeCard/EmployeeCard.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/package.json" />
-        <option value="$PROJECT_DIR$/src/components/molecules/UserCard/package.json" />
-        <option value="$PROJECT_DIR$/src/constants/userDetailTypes.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/AddOrEditUserForm/index.js" />
-        <option value="$PROJECT_DIR$/src/actions/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/actions/creators/userDetails.js" />
         <option value="$PROJECT_DIR$/src/components/organisms/EditUserForm/index.js" />
-        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
-        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
         <option value="$PROJECT_DIR$/src/actions/reducers/employeeDetails.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" />
         <option value="$PROJECT_DIR$/src/utils/userDetails.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
-        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/FormBody.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/DynamicImageLoader/ImageLoader.mod.scss" />
         <option value="$PROJECT_DIR$/src/utils/pausableTimer.js" />
         <option value="$PROJECT_DIR$/src/constants/notificationTypes.js" />
-        <option value="$PROJECT_DIR$/src/App/App.js" />
         <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationServiceContainer.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/atoms/Alert.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js" />
         <option value="$PROJECT_DIR$/src/actions/actionsHandlers/filters.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss" />
-        <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js" />
         <option value="$PROJECT_DIR$/src/actions/actionsHandlers/employeeDetails.js" />
-        <option value="$PROJECT_DIR$/src/service.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/IconsBar/package.json" />
         <option value="$PROJECT_DIR$/src/components/molecules/IconsBar/IconsBar.mod.scss" />
@@ -183,15 +199,35 @@
         <option value="$PROJECT_DIR$/webpack.common.js" />
         <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.js" />
         <option value="$PROJECT_DIR$/src/styles/_utilMixins.scss" />
-        <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/iconsConfig.js" />
-        <option value="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.mod.scss" />
         <option value="$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js" />
+        <option value="$PROJECT_DIR$/src/App/App.js" />
+        <option value="$PROJECT_DIR$/src/App/App.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/atoms/FormFields/ColorSelect.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/FormFields/BaseFieldRenderer.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/FormFields/SingleSelect.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/FormFields/TextInput.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/FormFields/FormFields.mod.scss" />
         <option value="$PROJECT_DIR$/src/styles/_utilStyles.scss" />
-        <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/atoms/Alert.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js" />
+        <option value="$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js" />
         <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js" />
+        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/FormBody.js" />
+        <option value="$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js" />
+        <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js" />
+        <option value="$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss" />
+        <option value="$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js" />
+        <option value="$PROJECT_DIR$/src/service.js" />
+        <option value="$PROJECT_DIR$/src/service/index.js" />
       </list>
     </option>
   </component>
@@ -212,7 +248,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="830" />
@@ -301,12 +337,6 @@
               <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
               <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,37 +374,19 @@
               <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="molecules" type="462c0819:PsiDirectoryNode" />
-              <item name="AppHeader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="molecules" type="462c0819:PsiDirectoryNode" />
-              <item name="UserCard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="organisms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
               <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="organisms" type="462c0819:PsiDirectoryNode" />
-              <item name="UserCardsContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="employee-directory" type="b2602c69:ProjectViewProjectNode" />
               <item name="employee-directory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,17 +456,17 @@
       <workItem from="1517584836935" duration="554000" />
       <workItem from="1517586182191" duration="3000" />
       <workItem from="1517594966235" duration="9786000" />
+      <workItem from="1517639920658" duration="2526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144407000" />
+    <option name="totallyTimeSpent" value="147377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
@@ -488,154 +500,48 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#133#184#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.npmrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationServiceContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/actionsHandlers/filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="540">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#37#73#0" expanded="false" />
+            <element signature="e#228#283#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/App/App.mod.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/actionsHandlers/employeeDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/IconsBar/IconsBar.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/IconsBar/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/IconsBar/IconsBar.mod.scss" />
-    <entry file="file://$PROJECT_DIR$/webpack.common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="82" column="44" lean-forward="false" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -647,29 +553,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/man.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/FormFields/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/nodeImage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/FormFields/ColorSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#120#166#0" expanded="false" />
+            <element signature="e#209#247#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sassImage.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/FormFields/BaseFieldRenderer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/reduxImage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/FormFields/SingleSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/reactImage.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/FormFields/TextInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/FormFields/FormFields.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.js">
@@ -684,9 +625,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/atoms/HoverIcon/HoverIcon.mod.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="165">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_utilStyles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -698,28 +657,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/iconsConfig.js">
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/OverlayLoader/OverlayLoader.mod.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/boostrapImage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/atoms/HoverIcon/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/OverlayLoader/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/Alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/InlineLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/atoms/PlaceholderImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="e#54#90#0" expanded="true" />
+            <element signature="e#143#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/FormContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/FormModalRenderer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/EmployeeDetailsForm.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/EmployeeDetailsForm/FormBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/fields.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/validators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserForm.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/FilterUserForm/FilterUserFormContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#101#141#0" expanded="true" />
+            <element signature="e#231#296#0" expanded="true" />
+            <element signature="e#355#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="27" lean-forward="false" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.mod.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="27" lean-forward="false" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationServiceContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/NotificationService/NotificationService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/UserCardsContainer/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -730,102 +874,93 @@
     <entry file="file://$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.mod.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.mod.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/organisms/UserCardsContainer/UserCardsContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/UserCard/UserCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="75" lean-forward="false" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.mod.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/flashpackerfamily-travel-website-jupiter-theme-example.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/gitImage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Linkedin_icon.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/official-facebook-logo-tile.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/empDirImage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_utilStyles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_utilMixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="64" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/AppHeader/AppHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
+        <state relative-caret-position="546">
+          <caret line="72" column="2" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#133#184#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.js">
+    <entry file="file://$PROJECT_DIR$/src/utils/eventManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/pausableTimer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#54#90#0" expanded="true" />
-            <element signature="e#143#197#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/molecules/ActionBar/ActionBar.mod.scss">
+    <entry file="file://$PROJECT_DIR$/src/utils/validators.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/userDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

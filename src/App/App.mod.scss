@@ -6,7 +6,7 @@
 	@extend .full-width;
 }
 
-.appBody {
+.appContent {
 
 	@extend .full-height;
 	@include flex-container($flow: column nowrap, $justify: stretch);

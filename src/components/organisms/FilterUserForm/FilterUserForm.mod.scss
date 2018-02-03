@@ -22,7 +22,7 @@
 
 .imageSection {
 	width: 17*$decade;
-	padding-right: 1.5*$decade;
+	padding-right: 1.5*$decade; //needed
 	border-right: $parrot-green .1*$decade solid;
 
 	@include flex-container($justify: center, $flow: column nowrap, $align-items: center);
