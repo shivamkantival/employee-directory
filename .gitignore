@@ -1,7 +1,0 @@
-node_modules/
-*.pyc
-*.yml
-*.lock
-*.xml
-package-lock.json
-workspace.xml
