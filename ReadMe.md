@@ -13,7 +13,7 @@ This webapp and API service are hosted on free servers and thus idle out after 3
 - The api sometimes outputs incorrect filter results for employees added through the platform, same can be verified in the network calls.
 
 # Features!
-The WebApp complies to all features provided in ReadMe document of the task, and some additional ones as well. These are as follows -
+The WebApp complies to following features. These are as follows -
 
 - View all employees and filter them based on contact details
 - update details of individual employees
@@ -28,6 +28,7 @@ The WebApp complies to all features provided in ReadMe document of the task, and
 - Bootstrap for styles
 - Webpack for bundling
 - Served using Express server
+> Jest needs to be integrated
 
 # Getting started!
 
