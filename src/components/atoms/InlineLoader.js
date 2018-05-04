@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Loader from 'halogen/PulseLoader';
 
 export const SIZES = {
-	sm : "10px",
+	sm: "10px",
 	md: "20px",
 	lg: "30px",
 };
@@ -12,7 +12,7 @@ export const SIZES = {
 function InlineLoader(props) {
 	return (
 		<Loader className={props.loaderClass} color="#4DAF7C" size={props.size} margin="5px" />
-	)
+	);
 }
 
 InlineLoader.propTypes = {

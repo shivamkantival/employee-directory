@@ -28,14 +28,14 @@ export function addUser(userData) {
 }
 
 export function errorLoadingAction() {
-  return {
-    type: ERROR_WHILE_LOADING,
-  };
+	return {
+		type: ERROR_WHILE_LOADING,
+	};
 }
 
 export function updateUserAction(data) {
-  return {
-    type: UPDATE_USER,
-    payload: data,
-  }
+	return {
+		type: UPDATE_USER,
+		payload: data,
+	};
 }

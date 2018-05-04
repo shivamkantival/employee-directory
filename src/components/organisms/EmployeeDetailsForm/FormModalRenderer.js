@@ -12,22 +12,22 @@ const DEFAULT_FORM_LABEL = 'Employee Details (All details are needed)';
 const DEFAULT_SUCCESS_LABEL = 'Save';
 
 class EmployeeDetailsForm extends PureComponent{
-	
+
 	renderFormHeader() {
 		const props = this.props;
 		return (<Modal.Header closeButton>
 			<Modal.Title id="contained-modal-title-sm" bsClass={s.titleText} >{props.headerLabel || DEFAULT_FORM_LABEL}</Modal.Title>
-		</Modal.Header>)
+		</Modal.Header>);
 	}
-	
+
 	renderFormBody() {
 		return (<Modal.Body>
 			<FormBody {...this.props} />
-		</Modal.Body>)
+		</Modal.Body>);
 	}
-	
+
 	renderFooter() {
-		const props  = this.props;
+		const props = this.props;
 		return (<Modal.Footer>
 			<ButtonToolbar>
 				<Button onClick={props.onCancel} bsSize="small">Close</Button>
@@ -40,10 +40,10 @@ class EmployeeDetailsForm extends PureComponent{
 					{props.successLabel || DEFAULT_SUCCESS_LABEL}
 				</Button>
 			</ButtonToolbar>
-		</Modal.Footer>)
+		</Modal.Footer>);
 					// disabled={!props.isValid}
 	}
-	
+
 	render() {
 		const props = this.props;
 		return (
@@ -59,17 +59,17 @@ class EmployeeDetailsForm extends PureComponent{
 				{this.renderFormBody(props)}
 				{this.renderFooter(props)}
 			</Modal>
-		)
+		);
 	}
 }
 
 EmployeeDetailsForm.propTypes = {
-  headerLabel: PropTypes.string,
-  successLabel: PropTypes.string,
-  onCancel: PropTypes.func,
-  onReset: PropTypes.func,
-  onSave: PropTypes.func,
-  isValid: PropTypes.bool,
+	headerLabel: PropTypes.string,
+	successLabel: PropTypes.string,
+	onCancel: PropTypes.func,
+	onReset: PropTypes.func,
+	onSave: PropTypes.func,
+	isValid: PropTypes.bool,
 };
 
 export default EmployeeDetailsForm;

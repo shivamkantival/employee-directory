@@ -24,28 +24,28 @@ import eventManager from 'utils/eventManager';
 import EVENT_TYPES from 'constants/eventTypes';
 import NOTIFICATION_TYPES from 'constants/notificationTypes';
 
-export const applyFilters = filters => dispatch => {
+export const applyFilters = (filters) => (dispatch) => {
 	const applyFilterAction = createApplyFilterAction(filters);
 	dispatch(applyFilterAction);
-	
+
 	const loadingDetailsAction = createLoadingDetailsAction();
 	dispatch(loadingDetailsAction);
-	
+
 	const queryParams = adaptToQueryString(adaptUserDetailsForQuery(filters));
-	
+
 	assetService.get(`?${queryParams}`)
-		.then(userDetails => {
+		.then((userDetails) => {
 			dispatch(createLoadedDetailsAction(userDetails || []));
 			_isEmpty(userDetails) && eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
-			  type: NOTIFICATION_TYPES.SUCCESS,
-        message: 'No users present for given filter',
-      })
+				type: NOTIFICATION_TYPES.SUCCESS,
+				message: 'No users present for given filter',
+			});
 		})
-		.catch(err => {
-      dispatch(createErrorWhileLoadingAction());
-      eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
-        type: NOTIFICATION_TYPES.ERROR,
-        message: 'Sorry!!, couldn\'t filter due to bad network',
-      })
+		.catch(() => {
+			dispatch(createErrorWhileLoadingAction());
+			eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
+				type: NOTIFICATION_TYPES.ERROR,
+				message: 'Sorry!!, couldn\'t filter due to bad network',
+			});
 		});
 };

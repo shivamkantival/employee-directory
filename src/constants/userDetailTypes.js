@@ -7,7 +7,7 @@ export const FIRST_NAME = 'first_name',
 	LOCATION = 'location',
 	TEAM = 'team';
 
-export default  {
+export default {
 	FIRST_NAME,
 	LAST_NAME,
 	TITLE,
@@ -15,9 +15,9 @@ export default  {
 	IMAGE,
 	LOCATION,
 	TEAM,
-}
+};
 
 export const DETAIL_TYPE_TO_DISPLAY_VALUE = {
-  [TEAM]: 'Team',
-  [TITLE]: 'Title',
+	[TEAM]: 'Team',
+	[TITLE]: 'Title',
 };

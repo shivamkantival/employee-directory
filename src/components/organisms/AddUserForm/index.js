@@ -24,7 +24,7 @@ class AddUserForm extends PureComponent {
 AddUserForm.propTypes = {
 	addUser: PropTypes.func,
 	onCancel: PropTypes.func,
-}
+};
 
 export default connect(
 	null,

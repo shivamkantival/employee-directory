@@ -1,6 +1,6 @@
 
 import {
-	APPLY_FILTER
+	APPLY_FILTER,
 } from "../reducers";
 
 export function applyFilter(filters) {

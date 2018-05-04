@@ -32,7 +32,7 @@ function validator(values) {
 		urlError = validateImage(values[FIELD_TYPES.IMAGE]),
 		teamError = validateTeam(values[FIELD_TYPES.TEAM]),
 		titleError = validateTitle(values[FIELD_TYPES.TITLE]);
-		
+
 	populateErrors(errors, firstNameError, FIELD_TYPES.FIRST_NAME);
 	populateErrors(errors, lastNameError, FIELD_TYPES.LAST_NAME);
 	populateErrors(errors, locationError, FIELD_TYPES.LOCATION);

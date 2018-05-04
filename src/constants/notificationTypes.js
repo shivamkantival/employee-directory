@@ -1,9 +1,9 @@
 export const SUCCESS = 'SUCCESS',
-  ERROR = 'ERROR',
-  DEFAULT = 'DEFAULT';
+	ERROR = 'ERROR',
+	DEFAULT = 'DEFAULT';
 
 export default {
-  SUCCESS,
-  ERROR,
-  DEFAULT,
+	SUCCESS,
+	ERROR,
+	DEFAULT,
 };

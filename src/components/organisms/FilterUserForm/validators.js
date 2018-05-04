@@ -7,21 +7,21 @@ import _isEmpty from 'lodash/isEmpty';
 
 function validateName(value) {
 	if (_isEmpty (value)){
-		return;
+		return null;
 	}
 	return VALIDATORS.validateName(value);
 }
 
 function validateLocation(value) {
 	if (_isEmpty (value)){
-		return;
+		return null;
 	}
 	return VALIDATORS.validateLocation(value);
 }
 
 function validateTeam(value) {
 	if (_isEmpty (value)){
-		return;
+		return null;
 	}
 	return VALIDATORS.validateTeam(value);
 }
@@ -32,7 +32,7 @@ function validator(values) {
 		lastNameError = validateName(values[FIELD_TYPES.LAST_NAME]),
 		locationError = validateLocation(values[FIELD_TYPES.LOCATION]),
 		teamError = validateTeam(values[FIELD_TYPES.TEAM]);
-	
+
 	populateErrors(errors, firstNameError, FIELD_TYPES.FIRST_NAME);
 	populateErrors(errors, lastNameError, FIELD_TYPES.LAST_NAME);
 	populateErrors(errors, locationError, FIELD_TYPES.LOCATION);

@@ -1,5 +1,4 @@
 //utils
-import _isEmpty from 'lodash/isEmpty';
 import _get from 'lodash/get';
 
 //constants
@@ -7,50 +6,50 @@ import USER_DETAIL_TYPES from 'constants/userDetailTypes';
 import {TEAMLESS} from 'constants/teams';
 
 function adaptColorForQuery(value) {
-  return value && value.split('#')[1];
+	return value && value.split('#')[1];
 }
 
 function adaptTeamForDisplay(value) {
-  return value === TEAMLESS.value
+	return value === TEAMLESS.value
     ? TEAMLESS.label
     : value;
 }
 
 function adaptColorForDisplay(value) {
-  return '#' + value;
+	return `#${ value}`;
 }
 
 function replaceAll(intialString, valueToReplace, replacement) {
-  return intialString.split(valueToReplace).join(replacement);
+	return intialString.split(valueToReplace).join(replacement);
 }
 
 export function adaptUserDetailsForQuery(userDetails) {
-  const color = userDetails[USER_DETAIL_TYPES.COLOR];
-  
-  userDetails[USER_DETAIL_TYPES.COLOR] = adaptColorForQuery(color);
-  
-  return userDetails;
+	const color = userDetails[USER_DETAIL_TYPES.COLOR];
+
+	userDetails[USER_DETAIL_TYPES.COLOR] = adaptColorForQuery(color);
+
+	return userDetails;
 }
 
 export function adaptUserDetailsForDisplay(userDetails) {
-  const color = userDetails[USER_DETAIL_TYPES.COLOR],
-    team = userDetails[USER_DETAIL_TYPES.TEAM];
-  
-  return Object.assign({},
+	const color = userDetails[USER_DETAIL_TYPES.COLOR],
+		team = userDetails[USER_DETAIL_TYPES.TEAM];
+
+	return Object.assign({},
     userDetails,
-    {
-      [USER_DETAIL_TYPES.COLOR]: adaptColorForDisplay(color),
-      [USER_DETAIL_TYPES.TEAM]: adaptTeamForDisplay(team),
-    },
+		{
+			[USER_DETAIL_TYPES.COLOR]: adaptColorForDisplay(color),
+			[USER_DETAIL_TYPES.TEAM]: adaptTeamForDisplay(team),
+		},
   );
 }
 
 export function getFullName(userDetails) {
-  return [_get(userDetails, `${USER_DETAIL_TYPES.FIRST_NAME}`, ''), _get(userDetails, `${USER_DETAIL_TYPES.LAST_NAME}`, '')]
+	return [_get(userDetails, `${USER_DETAIL_TYPES.FIRST_NAME}`, ''), _get(userDetails, `${USER_DETAIL_TYPES.LAST_NAME}`, '')]
     .join(' ');
 }
 
 export function getFormattedLocation(userDetails) {
-  const regionSeperatedString = replaceAll(userDetails[USER_DETAIL_TYPES.LOCATION], '/', ' - ');
-  return replaceAll(regionSeperatedString, '_', ' ');
+	const regionSeperatedString = replaceAll(userDetails[USER_DETAIL_TYPES.LOCATION], '/', ' - ');
+	return replaceAll(regionSeperatedString, '_', ' ');
 }

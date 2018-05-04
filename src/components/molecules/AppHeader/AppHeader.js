@@ -1,5 +1,4 @@
-import React, {PureComponent} from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
 import s from './AppHeader.mod.scss';
 
@@ -10,11 +9,11 @@ import ICONS_CONFIG from './iconsConfig';
 const iconsBackgroundColor = '#9099a2';
 
 function renderImage(imageInfo) {
-  return <HoverIcon backgroundColor={iconsBackgroundColor} key={imageInfo.id} image={imageInfo.icon} source={imageInfo.linkUrl} />
-};
+	return <HoverIcon backgroundColor={iconsBackgroundColor} key={imageInfo.id} image={imageInfo.icon} source={imageInfo.linkUrl} />;
+}
 
-function AppHeader (props){
-  return (<div className={s.headerContainer}>
+function AppHeader (){
+	return (<div className={s.headerContainer}>
     <div className={s.headerContentContainer} >
       <section className={s.appNameSection}>
         <span>Employee Directory</span>
@@ -24,7 +23,7 @@ function AppHeader (props){
         {ICONS_CONFIG.map(renderImage)}
       </section>
     </div>
-  </div>)
+  </div>);
 }
 
 export default AppHeader;

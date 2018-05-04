@@ -15,9 +15,9 @@ const initialState = {
 	loading: false,
 	loaded: false,
 	data: [],
-}
+};
 
-const getIndexOfSelectedUser = (allUsers, selectedUser) => _findIndex(allUsers, user => user.id === selectedUser.id);
+const getIndexOfSelectedUser = (allUsers, selectedUser) => _findIndex(allUsers, (user) => user.id === selectedUser.id);
 
 function employeeDetails(state = initialState, action) {
 	switch (action.type) {
@@ -44,39 +44,39 @@ function employeeDetails(state = initialState, action) {
 				},
 			});
 		}
-		
+
 		case ADD_USER: {
 			return update(state, {
 				data: {
 					$push: [action.payload],
 				},
-			})
+			});
 		}
-		
-    case ERROR_WHILE_LOADING: {
-      return update(state, {
-        loading: {
-          $set: false,
-        },
-        loaded: {
-          $set: state.loaded,
-        },
-      })
-    }
-    
-    case UPDATE_USER: {
-      
-      const updatedUser = action.payload,
-        indexOfUserInPresentState = getIndexOfSelectedUser(state.data, action.payload);
-      if (indexOfUserInPresentState !== -1) {
-        return update(state, {
-          data: {
-            $splice: [[indexOfUserInPresentState, 1, updatedUser]]
-          },
-        });
-      }
-      return state;
-    }
+
+		case ERROR_WHILE_LOADING: {
+			return update(state, {
+				loading: {
+					$set: false,
+				},
+				loaded: {
+					$set: state.loaded,
+				},
+			});
+		}
+
+		case UPDATE_USER: {
+
+			const updatedUser = action.payload,
+				indexOfUserInPresentState = getIndexOfSelectedUser(state.data, action.payload);
+			if (indexOfUserInPresentState !== -1) {
+				return update(state, {
+					data: {
+						$splice: [[indexOfUserInPresentState, 1, updatedUser]],
+					},
+				});
+			}
+			return state;
+		}
 		default: return state;
 	}
 }

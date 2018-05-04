@@ -14,24 +14,23 @@ import HoverIcon from 'components/atoms/HoverIcon';
 import empDirImage from 'assets/empDirImage.svg';
 
 class ActionBar extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showFilters: false,
-      showAddUser: false,
-    }
-  }
-  
-  toggleShowAddUser = () => {
-    this.setState({showAddUser: !this.state.showAddUser});
-  };
-  
-  toggleShowFilters = () => {
-    this.setState({showFilters: !this.state.showFilters});
-  };
-  
-  renderInfoSection = () => {
-    return (
+	constructor(props) {
+		super(props);
+		this.state = {
+			showFilters: false,
+			showAddUser: false,
+		};
+	}
+
+	toggleShowAddUser = () => {
+		this.setState({showAddUser: !this.state.showAddUser});
+	};
+
+	toggleShowFilters = () => {
+		this.setState({showFilters: !this.state.showFilters});
+	};
+
+	renderInfoSection = () => (
       <section className={s.infoSection}>
         <div className={s.infoDetailsAlignment}>
           <HoverIcon backgroundColor={'#e1e3e8'} image={empDirImage} iconSize={'LARGE'}/>
@@ -39,11 +38,10 @@ class ActionBar extends PureComponent {
         </div>
       </section>
     );
-  };
-  
-  renderActionButtons = () => {
-    const that = this;
-    return (
+
+	renderActionButtons = () => {
+		const that = this;
+		return (
       <ButtonToolbar>
         <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowAddUser} >
           Add Employee
@@ -52,28 +50,28 @@ class ActionBar extends PureComponent {
           Apply Filters
         </Button>
       </ButtonToolbar>
-    )
-  }
-  
-  renderActions = () => {
-    const that = this,
-      {showFilters, showAddUser} = this.state;
-    return (
+		);
+	}
+
+	renderActions = () => {
+		const that = this,
+			{showFilters, showAddUser} = this.state;
+		return (
       <section className={s.actionSection}>
         {that.renderActionButtons()}
         {showFilters && <FilterUserListForm onCancel={that.toggleShowFilters} />}
         {showAddUser && <AddUserForm onCancel={that.toggleShowAddUser} />}
       </section>
-    );
-  }
-  
-  render() {
-    const that = this;
-    return(<div className={s.actionBar}>
+		);
+	}
+
+	render() {
+		const that = this;
+		return(<div className={s.actionBar}>
       {that.renderInfoSection()}
       {that.renderActions()}
-    </div>)
-  }
+    </div>);
+	}
 }
 
 export default ActionBar;

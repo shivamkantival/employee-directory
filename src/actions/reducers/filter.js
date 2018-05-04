@@ -3,7 +3,7 @@ import update from 'immutability-helper';
 
 import USER_DETAIL_TYPES from 'constants/userDetailTypes';
 import {
-	APPLY_FILTER
+	APPLY_FILTER,
 } from "./index";
 
 const initialState = {

@@ -12,15 +12,10 @@ import {pure} from 'recompose';
 //styles
 import s from './FormFields.mod.scss';
 
-
-function renderOptions(options) {
-  return options.map(option => <option value={option.value} key={option.value}>{option.label}</option>)
-}
-
 function SingleSelect(props) {
-  const {id, fieldClass, label, options, fieldProps, error} = props;
-  const hasErrorToShow = !_isUndefined(error);
-  return (<BaseFieldRenderer
+	const {id, fieldClass, label, options, fieldProps, error} = props;
+	const hasErrorToShow = !_isUndefined(error);
+	return (<BaseFieldRenderer
     showError={hasErrorToShow}
     error={error}
     label={label}
@@ -37,12 +32,12 @@ function SingleSelect(props) {
 }
 
 SingleSelect.propTypes = {
-  id: PropTypes.string,
-  fieldClass: PropTypes.string,
-  label: PropTypes.string,
-  options: PropTypes.arrayOf(PropTypes.object),
-  fieldProps: PropTypes.object,
-  error: PropTypes.string,
+	id: PropTypes.string,
+	fieldClass: PropTypes.string,
+	label: PropTypes.string,
+	options: PropTypes.arrayOf(PropTypes.object),
+	fieldProps: PropTypes.object,
+	error: PropTypes.string,
 };
 
 export default pure(SingleSelect);

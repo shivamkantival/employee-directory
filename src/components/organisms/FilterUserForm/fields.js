@@ -2,7 +2,7 @@ import {
 	FIRST_NAME,
 	LAST_NAME,
 	LOCATION,
-	TEAM
+	TEAM,
 } from "constants/userDetailTypes";
 import {FIELD_TYPES} from 'components/atoms/FormFields';
 import locationZones from 'constants/timezoneConstants';
@@ -32,7 +32,7 @@ export const config = {
 		label: 'Select Employee Team',
 		type: FIELD_TYPES.SINGLE_SELECT,
 		options: teamOptions,
-	}
-}
+	},
+};
 
 export const fields = [FIRST_NAME, LAST_NAME, TEAM, LOCATION];

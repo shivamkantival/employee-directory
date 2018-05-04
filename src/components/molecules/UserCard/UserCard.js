@@ -25,72 +25,69 @@ import {
 import USER_DETAIL_TYPES, {DETAIL_TYPE_TO_DISPLAY_VALUE} from 'constants/userDetailTypes';
 
 function renderTooltip(header, value) {
-  return (<Tooltip id={`tooltip-${header}`} placement="top" className="in" >
+	return (<Tooltip id={`tooltip-${header}`} placement="top" className="in" >
     <strong>{value}</strong>
-  </Tooltip>)
+  </Tooltip>);
 }
 
 function renderTeamDetail(detail, userDetails) {
-  const detailTypeToView = DETAIL_TYPE_TO_DISPLAY_VALUE[detail],
-    detailValue = userDetails[detail];
-  return detailValue && (<OverlayTrigger trigger={['hover']} placement="top" overlay={renderTooltip(detailTypeToView, detailValue)}>
+	const detailTypeToView = DETAIL_TYPE_TO_DISPLAY_VALUE[detail],
+		detailValue = userDetails[detail];
+	return detailValue && (<OverlayTrigger trigger={['hover']} placement="top" overlay={renderTooltip(detailTypeToView, detailValue)}>
       <span className={s.teamDetail}>{`${detailTypeToView} : ${detailValue}`}</span>
     </OverlayTrigger>
-  )
+  );
 }
 
 class UserCard extends PureComponent {
-  state = {errorLoadingImage: false, showEditableForm: false};
-  
-  handleImageLoadError = () => {
-    this.setState({
-      errorLoadingImage: true,
-    });
-  };
-  
-  renderDetails = () => {
-    const {userDetails} = this;
-    return(<div className={s.detailsBox}>
+	state = {errorLoadingImage: false, showEditableForm: false};
+
+	handleImageLoadError = () => {
+		this.setState({
+			errorLoadingImage: true,
+		});
+	};
+
+	renderDetails = () => {
+		const {userDetails} = this;
+		return(<div className={s.detailsBox}>
       <span style={{color: userDetails[USER_DETAIL_TYPES.COLOR]}} className={s.userName}>{getFullName(userDetails)}</span>
       <span className={s.locationContainer}>{getFormattedLocation(userDetails)}</span>
       <div className={s.teamDetailsContainer}>
         {renderTeamDetail(USER_DETAIL_TYPES.TEAM, userDetails)}
         {renderTeamDetail(USER_DETAIL_TYPES.TITLE, userDetails)}
       </div>
-    </div>)
-  };
-  
-  toggleEditableForm = () => {
-    this.setState({
-      showEditableForm: !this.state.showEditableForm,
-    })
-  };
-  
-  handleSave = updatedUser => {
-    this.props.onUpdate(updatedUser);
-  };
-  
-  renderUpdateOption = () => {
-    const {userDetails, onUpdate} = this.props;
-    return (<span onClick={this.toggleEditableForm} className={s.updateOption}>
+    </div>);
+	};
+
+	toggleEditableForm = () => {
+		this.setState({
+			showEditableForm: !this.state.showEditableForm,
+		});
+	};
+
+	handleSave = (updatedUser) => {
+		this.props.onUpdate(updatedUser);
+	};
+
+	renderUpdateOption = () => (<span onClick={this.toggleEditableForm} className={s.updateOption}>
       Update details
-    </span>)
-  };
-  
-  renderEditingForm = () => {
-    const that = this;
-    return that.state.showEditableForm && (<EditUserForm
+    </span>);
+
+	renderEditingForm = () => {
+		const that = this;
+		return that.state.showEditableForm && (<EditUserForm
       onCancel={that.toggleEditableForm}
       onSave={that.handleSave}
       initialValue={that.userDetails}
     />);
-  };
-  
-  renderCard = state => {
-    const that = this,
-      props = that.props;
-    that.userDetails = adaptUserDetailsForDisplay(props.userDetails);
-    return (<div className={classnames(s.userCardContainer, 'pos-rel', s[state])}>
+	};
+
+	renderCard = (state) => {
+		const that = this,
+			props = that.props;
+		that.userDetails = adaptUserDetailsForDisplay(props.userDetails);
+		return (<div className={classnames(s.userCardContainer, 'pos-rel', s[state])}>
       <div className={s.cardTopBackground}></div>
       <PlaceholderImage
         fallbackImg={fallbackProfileImage}
@@ -104,15 +101,19 @@ class UserCard extends PureComponent {
       {that.renderUpdateOption()}
       {that.renderEditingForm()}
     </div>);
-  }
-  
-  render() {
-    const {emploeeDetails} = this.props;
-    
-    return (<Transition in appear exit="false" unmountOnExit timeout={450} >
+	}
+
+	render() {
+		return (<Transition in appear exit="false" unmountOnExit timeout={450} >
       {this.renderCard}
-    </Transition>)
-  }
+    </Transition>);
+	}
 }
+
+UserCard.propTypes = {
+	onUpdate: PropTypes.func,
+	userDetails: PropTypes.object,
+	emploeeDetails: PropTypes.object,
+};
 
 export default UserCard;

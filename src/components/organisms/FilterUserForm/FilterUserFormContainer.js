@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 //utils and configs
 import {config, fields} from './fields';
 import validate from './validators';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 //components
 import getFormRenderer from 'components/molecules/FormsRenderer';
@@ -25,38 +25,38 @@ class FilterUserFormContainer extends PureComponent {
 			value: props.initialValue,
 		};
 	}
-	
+
 	onSave = () => {
 		const that = this,
 			{isValid, value} = that.state;
-		
+
 		if (isValid) {
 			that.props.applyFilters(value);
 		}
 		that.onCancel();
 	};
-	
-	onValidate = validationState => {
+
+	onValidate = (validationState) => {
 		this.setState({isValid: validationState});
 	};
-	
-	onChange = value => {
+
+	onChange = (value) => {
 		const that = this;
 		that.setState({value});
 	};
-	
+
 	onReset = () => {
 		const that = this;
 		that.setState({value: that.props.initialValue});
 	};
-	
+
 	onCancel = () => {
 		const onCancel = this.props.onCancel;
 		if (onCancel) {
 			onCancel();
 		}
 	};
-	
+
 	render() {
 		const that = this;
 		return (<FilterUserForm
@@ -68,7 +68,7 @@ class FilterUserFormContainer extends PureComponent {
 			onCancel={that.onCancel}
 			FormFieldsRenderer={FormFieldsRenderer}
 			config={config}
-		/>)
+		/>);
 	}
 }
 
@@ -76,12 +76,12 @@ FilterUserFormContainer.propTypes = {
 	applyFilters: PropTypes.func,
 	onCancel: PropTypes.func,
 	initialValue: PropTypes.object,
-}
+};
 
 function mapStateToProps(state) {
 	return {
 		initialValue: state.filters,
-	}
+	};
 }
 
 export default connect(

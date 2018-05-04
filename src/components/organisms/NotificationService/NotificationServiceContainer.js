@@ -15,45 +15,45 @@ import NotificationService from './NotificationService';
  * anyone from across the platform can show notification by throwing a simple SHOW_NOTIF event
  */
 class NotificationServiceContainer extends PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = {
-            notifications: [],
-        }
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			notifications: [],
+		};
+	}
 
-    componentDidMount() {
-        eventManager.on(SHOW_NOTIF, this.addNotification);
-    }
+	componentDidMount() {
+		eventManager.on(SHOW_NOTIF, this.addNotification);
+	}
 
-    componentWillUnmount() {
-        eventManager.off(SHOW_NOTIF, this.addNotification);
-    }
+	componentWillUnmount() {
+		eventManager.off(SHOW_NOTIF, this.addNotification);
+	}
 
-    addNotification = (notificationData = {}) => {
-        const notifications = this.state.notifications;
-        this.setState({
-            notifications: [...notifications, {...notificationData, id: _uniqueId()}],
-        })
-    }
+	addNotification = (notificationData = {}) => {
+		const notifications = this.state.notifications;
+		this.setState({
+			notifications: [...notifications, {...notificationData, id: _uniqueId()}],
+		});
+	}
 
-    onRemove = notificationId => {
-        const notifications = this.state.notifications,
-            indexOfSelectedNotification = notifications.findIndex(notification => notification.id === notificationId);
-        
-        (indexOfSelectedNotification !== -1) && notifications.splice(indexOfSelectedNotification, 1);
+	onRemove = (notificationId) => {
+		const notifications = this.state.notifications,
+			indexOfSelectedNotification = notifications.findIndex((notification) => notification.id === notificationId);
 
-        this.setState({
-            notifications: [...notifications],
-        });
-    }
+		(indexOfSelectedNotification !== -1) && notifications.splice(indexOfSelectedNotification, 1);
 
-    render() {
-        return(<NotificationService 
+		this.setState({
+			notifications: [...notifications],
+		});
+	}
+
+	render() {
+		return(<NotificationService
             onRemove={this.onRemove}
             notifications={this.state.notifications}
-        />)
-    }
+        />);
+	}
 }
 
 export default NotificationServiceContainer;

@@ -23,53 +23,53 @@ class EmployeeDetailsFormContainer extends PureComponent {
 		this.state = {
 			value: props.initialValue,
 			isValid: true,
-      forceValidate: false,
-		}
+			forceValidate: false,
+		};
 	}
-	
+
 	onSave = () => {
 		const that = this,
 			{isValid, value} = that.state,
 			onSave = that.props.onSave;
-		
+
 		if (!isValid) {
-		  that.setState({forceValidate: true});
-		  return;
-    }
-    
-    onSave &&	onSave(value);
+			that.setState({forceValidate: true});
+			return;
+		}
+
+		onSave &&	onSave(value);
 		that.onCancel();
 	};
-	
-	onValidate = validationState => {
+
+	onValidate = (validationState) => {
 		this.setState({isValid: validationState});
 	};
-	
-	onChange = value => {
+
+	onChange = (value) => {
 		const that = this;
 		that.setState({value});
-		
+
 		const {onChange} = that.props;
 		if (onChange) {
 			onChange(value);
 		}
 	};
-	
+
 	onReset = () => {
 		const that = this;
 		that.setState({
-      value: that.props.initialValue,
-      forceValidate: false,
-    });
+			value: that.props.initialValue,
+			forceValidate: false,
+		});
 	};
-	
+
 	onCancel = () => {
 		const onCancel = this.props.onCancel;
 		if (onCancel) {
 			onCancel();
 		}
 	};
-	
+
 	render() {
 		const that = this,
 			props = that.props;
@@ -85,7 +85,7 @@ class EmployeeDetailsFormContainer extends PureComponent {
 			config={config}
 			headerLabel={props.headerLabel}
 			successLabel={props.successLabel}
-		/>)
+		/>);
 	}
 }
 

@@ -18,4 +18,4 @@ export function adaptToQueryString(params) {
 
 export default {
 	adaptToQueryString,
-}
+};

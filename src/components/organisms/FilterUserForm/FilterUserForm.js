@@ -15,9 +15,9 @@ class FilterUserForm extends PureComponent{
 		const props = this.props;
 		return (<Modal.Header closeButton>
 			<Modal.Title id="contained-modal-title-sm" bsClass={s.titleText} >{props.headerLabel || DEFAULT_FORM_LABEL}</Modal.Title>
-		</Modal.Header>)
+		</Modal.Header>);
 	}
-	
+
 	renderFormBody() {
 		const {FormFieldsRenderer, onValidate, onChange, value, config} = this.props;
 		return (<Modal.Body>
@@ -27,11 +27,11 @@ class FilterUserForm extends PureComponent{
 				onValidate={onValidate}
 				onChange={onChange}
 			/>
-		</Modal.Body>)
+		</Modal.Body>);
 	}
-	
+
 	renderFooter() {
-		const props  = this.props;
+		const props = this.props;
 		return (<Modal.Footer>
 			<ButtonToolbar>
 				<Button onClick={props.onCancel} bsSize="small">Close</Button>
@@ -45,9 +45,9 @@ class FilterUserForm extends PureComponent{
 					{props.successLabel || DEFAULT_SUCCESS_LABEL}
 				</Button>
 			</ButtonToolbar>
-		</Modal.Footer>)
+		</Modal.Footer>);
 	}
-	
+
 	render() {
 		const props = this.props;
 		return (
@@ -62,7 +62,7 @@ class FilterUserForm extends PureComponent{
 				{this.renderFormBody(props)}
 				{this.renderFooter(props)}
 			</Modal>
-		)
+		);
 	}
 }
 
@@ -73,6 +73,11 @@ FilterUserForm.propTypes = {
 	onReset: PropTypes.func,
 	onSave: PropTypes.func,
 	isValid: PropTypes.bool,
+	FormFieldsRenderer: PropTypes.func,
+	onValidate: PropTypes.func,
+	onChange: PropTypes.func,
+	value: PropTypes.object,
+	config: PropTypes.object,
 };
 
 export default FilterUserForm;

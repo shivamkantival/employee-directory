@@ -5,7 +5,7 @@ export const TEAMLESS = {
 	},
 	CUSTOM_RELATIONS = {
 		label: 'Customer Relations',
-		value: 'Customer Relations'
+		value: 'Customer Relations',
 	},
 	MANAGER = {
 		label: 'Manager',

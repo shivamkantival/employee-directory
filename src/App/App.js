@@ -14,8 +14,8 @@ import UserDetailsContainer from 'components/organisms/UserCardsContainer';
 import NotificationService from 'components/organisms/NotificationService';
 
 
-function App(props) {
-  return (<div className={classnames(s.appContainer, 'pos-rel')}>
+function App() {
+	return (<div className={classnames(s.appContainer, 'pos-rel')}>
     <div className={s.appContent}>
       <AppHeader/>
       <ActionBar/>

@@ -5,7 +5,7 @@ import ColorSelect from './ColorSelect';
 export const FIELD_TYPES = {
 	TEXT_INPUT: 'text',
 	SINGLE_SELECT: 'select',
-  COLOR_SELECT: 'color',
+	COLOR_SELECT: 'color',
 };
 
 export const FIELD_TYPE_TO_RENDERER = new Map([
