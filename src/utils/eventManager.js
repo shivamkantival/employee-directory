@@ -9,7 +9,7 @@ const eventManager = {
 
 	off (eventType, callBack) {
 		const eventList = this.events.get(eventType);
-		const callBackIndex = eventList.find((eventCallBack) => eventCallBack === callBack);
+		const callBackIndex = eventList.find(eventCallBack => eventCallBack === callBack);
 
 		if (callBackIndex) {
 			eventList.splice(callBackIndex, 1);
@@ -19,7 +19,7 @@ const eventManager = {
 	emit (eventType, ...callBackParams) {
 		const eventList = this.events.get(eventType) || [];
 
-		eventList.forEach((eventCallBack) => {
+		eventList.forEach(eventCallBack => {
 			eventCallBack(...callBackParams);
 		});
 	},

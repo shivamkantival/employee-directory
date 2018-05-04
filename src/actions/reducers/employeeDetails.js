@@ -17,7 +17,7 @@ const initialState = {
 	data: [],
 };
 
-const getIndexOfSelectedUser = (allUsers, selectedUser) => _findIndex(allUsers, (user) => user.id === selectedUser.id);
+const getIndexOfSelectedUser = (allUsers, selectedUser) => _findIndex(allUsers, user => user.id === selectedUser.id);
 
 function employeeDetails(state = initialState, action) {
 	switch (action.type) {

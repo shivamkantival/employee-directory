@@ -30,7 +30,7 @@ AnimatedNotification.propTypes = {
  */
 class NotificationService extends PureComponent {
 
-	renderNotification = (notification) => (<AnimatedNotification key={notification.id} >
+	renderNotification = notification => (<AnimatedNotification key={notification.id} >
       <NotificatioCard notification={notification} onRemove={this.props.onRemove} />
     </AnimatedNotification>)
 

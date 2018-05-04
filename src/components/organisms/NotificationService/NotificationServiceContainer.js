@@ -37,9 +37,9 @@ class NotificationServiceContainer extends PureComponent {
 		});
 	}
 
-	onRemove = (notificationId) => {
+	onRemove = notificationId => {
 		const notifications = this.state.notifications,
-			indexOfSelectedNotification = notifications.findIndex((notification) => notification.id === notificationId);
+			indexOfSelectedNotification = notifications.findIndex(notification => notification.id === notificationId);
 
 		(indexOfSelectedNotification !== -1) && notifications.splice(indexOfSelectedNotification, 1);
 

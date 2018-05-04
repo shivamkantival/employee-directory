@@ -37,7 +37,7 @@ class UserCardsContainer extends PureComponent {
 		}
 	}
 
-	renderCard = (userDetails) => <UserCard
+	renderCard = userDetails => <UserCard
       userDetails={userDetails}
       onUpdate={this.props.updateUser}
       key={`${this.uniqueKey}_${userDetails.id}`}

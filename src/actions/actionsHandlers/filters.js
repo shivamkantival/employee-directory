@@ -24,7 +24,7 @@ import eventManager from 'utils/eventManager';
 import EVENT_TYPES from 'constants/eventTypes';
 import NOTIFICATION_TYPES from 'constants/notificationTypes';
 
-export const applyFilters = (filters) => (dispatch) => {
+export const applyFilters = filters => dispatch => {
 	const applyFilterAction = createApplyFilterAction(filters);
 	dispatch(applyFilterAction);
 
@@ -34,7 +34,7 @@ export const applyFilters = (filters) => (dispatch) => {
 	const queryParams = adaptToQueryString(adaptUserDetailsForQuery(filters));
 
 	assetService.get(`?${queryParams}`)
-		.then((userDetails) => {
+		.then(userDetails => {
 			dispatch(createLoadedDetailsAction(userDetails || []));
 			_isEmpty(userDetails) && eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
 				type: NOTIFICATION_TYPES.SUCCESS,

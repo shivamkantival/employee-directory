@@ -14,7 +14,7 @@ import _findIndex from 'lodash/findIndex';
 import _isEmpty from 'lodash/isEmpty';
 
 function validateSelectorValue(options, value) {
-	if (_findIndex(options, (option) => option.value === value) === -1) {
+	if (_findIndex(options, option => option.value === value) === -1) {
 		return NOT_VALID;
 	}
 	return undefined;

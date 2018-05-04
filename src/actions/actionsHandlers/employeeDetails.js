@@ -23,9 +23,9 @@ import eventManager from 'utils/eventManager';
 import EVENT_TYPES from 'constants/eventTypes';
 import NOTIFICATION_TYPES from 'constants/notificationTypes';
 
-export const addUser = (values) => (dispatch) => {
+export const addUser = values => dispatch => {
 	assetService.post('', adaptUserDetailsForQuery(values))
-		.then((data) => {
+		.then(data => {
 			dispatch(createAddUserAction(data));
 			eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
 				type: NOTIFICATION_TYPES.SUCCESS,
@@ -40,12 +40,12 @@ export const addUser = (values) => (dispatch) => {
 		});
 };
 
-export const fetchAllEmployees = () => (dispatch) => {
+export const fetchAllEmployees = () => dispatch => {
 	const loadingDetailsAction = createLoadingDetailsAction();
 	dispatch(loadingDetailsAction);
 
 	assetService.get('')
-	.then((data) => {
+	.then(data => {
 		dispatch(createLoadedDetailsAction(data || []));
 		_isEmpty(data) && eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
 			type: NOTIFICATION_TYPES.SUCCESS,
@@ -61,10 +61,10 @@ export const fetchAllEmployees = () => (dispatch) => {
 	});
 };
 
-export const updateEmployee = (updatedUserDetails) => (dispatch) => {
+export const updateEmployee = updatedUserDetails => dispatch => {
 	const url = `/${updatedUserDetails.id}`;
 	assetService.put(url, adaptUserDetailsForQuery(updatedUserDetails))
-	.then((data) => {
+	.then(data => {
 		dispatch(createUpdateUserAction(data));
 		eventManager.emit(EVENT_TYPES.SHOW_NOTIF, {
 			type: NOTIFICATION_TYPES.SUCCESS,

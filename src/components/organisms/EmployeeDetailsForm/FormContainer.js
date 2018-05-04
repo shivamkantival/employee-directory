@@ -41,11 +41,11 @@ class EmployeeDetailsFormContainer extends PureComponent {
 		that.onCancel();
 	};
 
-	onValidate = (validationState) => {
+	onValidate = validationState => {
 		this.setState({isValid: validationState});
 	};
 
-	onChange = (value) => {
+	onChange = value => {
 		const that = this;
 		that.setState({value});
 

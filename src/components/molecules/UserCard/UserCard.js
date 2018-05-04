@@ -66,7 +66,7 @@ class UserCard extends PureComponent {
 		});
 	};
 
-	handleSave = (updatedUser) => {
+	handleSave = updatedUser => {
 		this.props.onUpdate(updatedUser);
 	};
 
@@ -83,7 +83,7 @@ class UserCard extends PureComponent {
     />);
 	};
 
-	renderCard = (state) => {
+	renderCard = state => {
 		const that = this,
 			props = that.props;
 		that.userDetails = adaptUserDetailsForDisplay(props.userDetails);
