@@ -1,22 +1,21 @@
 //utils
 import _get from 'lodash/get';
+import _find from 'lodash/find';
 
 //constants
 import USER_DETAIL_TYPES from 'constants/userDetailTypes';
-import {TEAMLESS} from 'constants/teams';
+import TEAMS, {TEAMLESS} from 'constants/teams';
 
 function adaptColorForQuery(value) {
 	return value && value.split('#')[1];
 }
 
-function adaptTeamForDisplay(value) {
-	return value === TEAMLESS.value
-    ? TEAMLESS.label
-    : value;
+function adaptTeamForDisplay(value = TEAMLESS.value) {
+	return _find(TEAMS, teamOption => teamOption.value === value).label;
 }
 
-function adaptColorForDisplay(value) {
-	return `#${ value}`;
+function adaptColorForDisplay(value = 'ffff') {
+	return `#${value}`;
 }
 
 function replaceAll(intialString, valueToReplace, replacement) {
@@ -26,22 +25,21 @@ function replaceAll(intialString, valueToReplace, replacement) {
 export function adaptUserDetailsForQuery(userDetails) {
 	const color = userDetails[USER_DETAIL_TYPES.COLOR];
 
-	userDetails[USER_DETAIL_TYPES.COLOR] = adaptColorForQuery(color);
-
-	return userDetails;
+	return {
+		...userDetails,
+		[USER_DETAIL_TYPES.COLOR]: adaptColorForQuery(color),
+	};
 }
 
 export function adaptUserDetailsForDisplay(userDetails) {
 	const color = userDetails[USER_DETAIL_TYPES.COLOR],
 		team = userDetails[USER_DETAIL_TYPES.TEAM];
 
-	return Object.assign({},
-    userDetails,
-		{
-			[USER_DETAIL_TYPES.COLOR]: adaptColorForDisplay(color),
-			[USER_DETAIL_TYPES.TEAM]: adaptTeamForDisplay(team),
-		},
-  );
+	return {
+		...userDetails,
+		[USER_DETAIL_TYPES.COLOR]: adaptColorForDisplay(color),
+		[USER_DETAIL_TYPES.TEAM]: adaptTeamForDisplay(team),
+	};
 }
 
 export function getFullName(userDetails) {
@@ -53,3 +51,10 @@ export function getFormattedLocation(userDetails) {
 	const regionSeperatedString = replaceAll(userDetails[USER_DETAIL_TYPES.LOCATION], '/', ' - ');
 	return replaceAll(regionSeperatedString, '_', ' ');
 }
+
+export default {
+	adaptUserDetailsForQuery,
+	adaptUserDetailsForDisplay,
+	getFullName,
+	getFormattedLocation,
+};

@@ -8,7 +8,6 @@ import LOCATIONS from 'constants/timezoneConstants';
 import urlValidator from 'valid-url';
 
 //utils
-import _isUndefined from 'lodash/isUndefined';
 import _isString from 'lodash/isString';
 import _findIndex from 'lodash/findIndex';
 import _isEmpty from 'lodash/isEmpty';
@@ -21,7 +20,7 @@ function validateSelectorValue(options, value) {
 }
 
 export function stringNotEmpty(value) {
-	if (!_isString(value) || _isUndefined(value) || value === '') {
+	if (!_isString(value) || _isEmpty(value)) {
 		return CANNOT_BE_EMPTY;
 	}
 	return undefined;

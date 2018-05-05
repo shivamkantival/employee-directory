@@ -11,7 +11,7 @@ function getSanitizedQueryParams(params) {
 	}, {});
 }
 
-export function adaptToQueryString(params) {
+export function adaptToQueryString(params = {}) {
 	const sanitizedQueryParams = getSanitizedQueryParams(params);
 	return queryString.stringify(sanitizedQueryParams);
 }

@@ -1,7 +1,7 @@
 {
     "modulePaths": [
         "<rootDir>/src"
-      ],
+    ],
     "notify": true,
     "testMatch": [ 
         "**/__tests__/**/*.spec.js?(x)",
