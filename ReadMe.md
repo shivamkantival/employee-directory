@@ -28,7 +28,7 @@ The WebApp complies to following features. These are as follows -
 - Bootstrap for styles
 - Webpack for bundling
 - Served using Express server
-> Jest needs to be integrated
+- Jest integrated now, tests being added regularly to have complete code coverage
 
 # Getting started!
 
@@ -38,6 +38,11 @@ To install and run this app on your local server you must have node v8.9 and npm
     $ npm install
     $ npm run deploy
 Your app will now be running on http://localhost:5000.
+
+Following command can be used to run jest suite for the project.
+
+    $ npm run test
+    > Jest was recently integrated and thus tests are being added. Project as of now lacks complete test coverage
 
 # Design Decisions!
 
