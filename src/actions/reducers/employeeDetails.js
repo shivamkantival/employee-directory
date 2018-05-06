@@ -17,7 +17,7 @@ const initialState = {
 	data: [],
 };
 
-const getIndexOfSelectedUser = (allUsers, selectedUser) => _findIndex(allUsers, user => user.id === selectedUser.id);
+const getIndexOfSelectedUser = (allUsers, selectedUser = {}) => _findIndex(allUsers, user => user.id === selectedUser.id);
 
 function employeeDetails(state = initialState, action) {
 	switch (action.type) {
@@ -25,9 +25,6 @@ function employeeDetails(state = initialState, action) {
 			return update(state, {
 				loading: {
 					$set: true,
-				},
-				loaded: {
-					$set: false,
 				},
 			});
 		}
@@ -46,11 +43,11 @@ function employeeDetails(state = initialState, action) {
 		}
 
 		case ADD_USER: {
-			return update(state, {
+			return action.payload ? update(state, {
 				data: {
 					$push: [action.payload],
 				},
-			});
+			}) : state;
 		}
 
 		case ERROR_WHILE_LOADING: {
@@ -58,16 +55,13 @@ function employeeDetails(state = initialState, action) {
 				loading: {
 					$set: false,
 				},
-				loaded: {
-					$set: state.loaded,
-				},
 			});
 		}
 
 		case UPDATE_USER: {
 
 			const updatedUser = action.payload,
-				indexOfUserInPresentState = getIndexOfSelectedUser(state.data, action.payload);
+				indexOfUserInPresentState = getIndexOfSelectedUser(state.data, updatedUser);
 			if (indexOfUserInPresentState !== -1) {
 				return update(state, {
 					data: {

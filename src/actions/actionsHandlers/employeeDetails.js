@@ -78,3 +78,9 @@ export const updateEmployee = updatedUserDetails => dispatch => {
 		});
 	});
 };
+
+export default {
+	addUser,
+	updateEmployee,
+	fetchAllEmployees,
+};

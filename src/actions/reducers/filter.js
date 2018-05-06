@@ -13,12 +13,13 @@ const initialState = {
 	[USER_DETAIL_TYPES.LOCATION]: '',
 };
 
-function filters(state = initialState, action) {
+function filters(state = initialState, action = {}) {
 	switch (action.type) {
 		case APPLY_FILTER: {
-			return update(state, {
+
+			return action.payload ? update(state, {
 				$set: action.payload,
-			});
+			}) : state;
 		}
 		default: {
 			return state;
