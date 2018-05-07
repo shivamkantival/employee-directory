@@ -18,8 +18,7 @@ import {getFullName} from 'utils/userDetails';
 
 class FormBody extends PureComponent {
 	renderImageSection () {
-		const that = this,
-			{value} = that.props;
+		const {value} = this.props;
 
 		const source = value[IMAGE_URL];
 		return (<div className={s.imageSection}>

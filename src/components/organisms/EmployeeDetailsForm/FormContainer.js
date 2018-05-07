@@ -28,17 +28,16 @@ class EmployeeDetailsFormContainer extends PureComponent {
 	}
 
 	onSave = () => {
-		const that = this,
-			{isValid, value} = that.state,
-			onSave = that.props.onSave;
+		const {isValid, value} = this.state,
+			onSave = this.props.onSave;
 
 		if (!isValid) {
-			that.setState({forceValidate: true});
+			this.setState({forceValidate: true});
 			return;
 		}
 
 		onSave &&	onSave(value);
-		that.onCancel();
+		this.onCancel();
 	};
 
 	onValidate = validationState => {
@@ -46,19 +45,17 @@ class EmployeeDetailsFormContainer extends PureComponent {
 	};
 
 	onChange = value => {
-		const that = this;
-		that.setState({value});
+		this.setState({value});
 
-		const {onChange} = that.props;
+		const {onChange} = this.props;
 		if (onChange) {
 			onChange(value);
 		}
 	};
 
 	onReset = () => {
-		const that = this;
-		that.setState({
-			value: that.props.initialValue,
+		this.setState({
+			value: this.props.initialValue,
 			forceValidate: false,
 		});
 	};
@@ -71,16 +68,16 @@ class EmployeeDetailsFormContainer extends PureComponent {
 	};
 
 	render() {
-		const that = this,
-			props = that.props;
+		const props = this.props;
+
 		return (<FormRenderer
-			{...that.state}
-			onValidate={that.onValidate}
-      forceValidate={that.state.forceValidate}
-			onSave={that.onSave}
-			onChange={that.onChange}
-			onReset={that.onReset}
-			onCancel={that.onCancel}
+			{...this.state}
+			onValidate={this.onValidate}
+      forceValidate={this.state.forceValidate}
+			onSave={this.onSave}
+			onChange={this.onChange}
+			onReset={this.onReset}
+			onCancel={this.onCancel}
 			FormFieldsRenderer={FormFieldsRenderer}
 			config={config}
 			headerLabel={props.headerLabel}

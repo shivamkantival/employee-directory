@@ -27,13 +27,12 @@ class FilterUserFormContainer extends PureComponent {
 	}
 
 	onSave = () => {
-		const that = this,
-			{isValid, value} = that.state;
+		const {isValid, value} = this.state;
 
 		if (isValid) {
-			that.props.applyFilters(value);
+			this.props.applyFilters(value);
 		}
-		that.onCancel();
+		this.onCancel();
 	};
 
 	onValidate = validationState => {
@@ -41,13 +40,11 @@ class FilterUserFormContainer extends PureComponent {
 	};
 
 	onChange = value => {
-		const that = this;
-		that.setState({value});
+		this.setState({value});
 	};
 
 	onReset = () => {
-		const that = this;
-		that.setState({value: that.props.initialValue});
+		this.setState({value: this.props.initialValue});
 	};
 
 	onCancel = () => {
@@ -58,14 +55,13 @@ class FilterUserFormContainer extends PureComponent {
 	};
 
 	render() {
-		const that = this;
 		return (<FilterUserForm
-			{...that.state}
-			onValidate={that.onValidate}
-			onSave={that.onSave}
-			onChange={that.onChange}
-			onReset={that.onReset}
-			onCancel={that.onCancel}
+			{...this.state}
+			onValidate={this.onValidate}
+			onSave={this.onSave}
+			onChange={this.onChange}
+			onReset={this.onReset}
+			onCancel={this.onCancel}
 			FormFieldsRenderer={FormFieldsRenderer}
 			config={config}
 		/>);

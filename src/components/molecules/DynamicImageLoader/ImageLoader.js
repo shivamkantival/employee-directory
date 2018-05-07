@@ -26,10 +26,9 @@ class DynamicImageLoader extends PureComponent {
 	}
 
 	componentDidMount() {
-		const that = this,
-			{source} = that.props;
+		const {source} = this.props;
 		if (source) {
-			that.loadImageFromSource();
+			this.loadImageFromSource();
 		}
 	}
 
@@ -63,9 +62,8 @@ class DynamicImageLoader extends PureComponent {
 	};
 
 	render() {
-		const that = this,
-			{error, loading} = that.state,
-			props = that.props,
+		const {error, loading} = this.state,
+			props = this.props,
 			source = props.source;
 
     //shows error if error occured, else shows loader if is currently loading
@@ -77,8 +75,8 @@ class DynamicImageLoader extends PureComponent {
         imageStyles={s.imageStyles}
         placeholderStyle={s.placeholder}
         source={source}
-        onLoad={that.handleOnLoad}
-        onError={that.handleOnError}
+        onLoad={this.handleOnLoad}
+        onError={this.handleOnError}
         fallbackImg={props.fallbackImg}
         hasError={error}
       />

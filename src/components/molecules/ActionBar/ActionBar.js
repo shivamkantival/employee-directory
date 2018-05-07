@@ -39,37 +39,32 @@ class ActionBar extends PureComponent {
       </section>
     );
 
-	renderActionButtons = () => {
-		const that = this;
-		return (
+	renderActionButtons = () => (
       <ButtonToolbar>
-        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowAddUser} >
+        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={this.toggleShowAddUser} >
           Add Employee
         </Button>
-        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={that.toggleShowFilters} >
+        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={this.toggleShowFilters} >
           Apply Filters
         </Button>
       </ButtonToolbar>
-		);
-	}
+		)
 
 	renderActions = () => {
-		const that = this,
-			{showFilters, showAddUser} = this.state;
+		const {showFilters, showAddUser} = this.state;
 		return (
       <section className={s.actionSection}>
-        {that.renderActionButtons()}
-        {showFilters && <FilterUserListForm onCancel={that.toggleShowFilters} />}
-        {showAddUser && <AddUserForm onCancel={that.toggleShowAddUser} />}
+        {this.renderActionButtons()}
+        {showFilters && <FilterUserListForm onCancel={this.toggleShowFilters} />}
+        {showAddUser && <AddUserForm onCancel={this.toggleShowAddUser} />}
       </section>
 		);
 	}
 
 	render() {
-		const that = this;
 		return(<div className={s.actionBar}>
-      {that.renderInfoSection()}
-      {that.renderActions()}
+      {this.renderInfoSection()}
+      {this.renderActions()}
     </div>);
 	}
 }

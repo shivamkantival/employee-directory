@@ -37,9 +37,8 @@ class NotificationCard extends PureComponent {
 	};
 
 	forceClose = () => {
-		const that = this;
-		that.timer.cancel();
-		that.closeNotification();
+		this.timer.cancel();
+		this.closeNotification();
 	};
 
 	pauseTimer = () => {

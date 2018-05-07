@@ -74,32 +74,28 @@ class UserCard extends PureComponent {
       Update details
     </span>);
 
-	renderEditingForm = () => {
-		const that = this;
-		return that.state.showEditableForm && (<EditUserForm
-      onCancel={that.toggleEditableForm}
-      onSave={that.handleSave}
-      initialValue={that.userDetails}
+	renderEditingForm = () => this.state.showEditableForm && (<EditUserForm
+      onCancel={this.toggleEditableForm}
+      onSave={this.handleSave}
+      initialValue={this.userDetails}
     />);
-	};
 
 	renderCard = state => {
-		const that = this,
-			props = that.props;
-		that.userDetails = adaptUserDetailsForDisplay(props.userDetails);
+		const props = this.props;
+		this.userDetails = adaptUserDetailsForDisplay(props.userDetails);
 		return (<div className={classnames(s.userCardContainer, 'pos-rel', s[state])}>
       <div className={s.cardTopBackground}></div>
       <PlaceholderImage
         fallbackImg={fallbackProfileImage}
-        hasError={that.state.errorLoadingImage}
-        onError={that.handleImageLoadError}
+        hasError={this.state.errorLoadingImage}
+        onError={this.handleImageLoadError}
         source={props.userDetails.image}
         placeholderStyle={s.profileImagePlaceHolder}
         imageStyles={s.profileImage}
       />
-      {that.renderDetails()}
-      {that.renderUpdateOption()}
-      {that.renderEditingForm()}
+      {this.renderDetails()}
+      {this.renderUpdateOption()}
+      {this.renderEditingForm()}
     </div>);
 	}
 
