@@ -6,24 +6,24 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: {
-		app: './src/index.js',
+		app: path.resolve(__dirname, '../../src'),
 	},
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(['../../dist']),
 		new HtmlWebpackPlugin({
 			title: 'Production',
-			template: 'src/index.html',
+			template: path.resolve(__dirname, '../../src/index.html'),
 			inject: 'body',
 		}),
 		new ExtractTextPlugin({ filename: 'style.css' }),
 	],
 	output: {
 		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, '../../dist'),
 		publicPath: '/',
 	},
 	resolve: {
-		modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+		modules: [path.resolve(__dirname, '../../src'), 'node_modules'],
 	},
 	node: {
 		dns: "mock",
@@ -68,7 +68,7 @@ module.exports = {
 						{
 							loader: 'sass-loader',
 							options: {
-								includePaths: ['./src/styles'],
+								includePaths: [path.resolve(__dirname, '../../src/styles')],
 							},
 						},
 					],

@@ -62,10 +62,6 @@ class FormContainer extends PureComponent {
 	}
 }
 
-export default function getFormRenderer(fields, validate) {
-	return form({fields, validate})(FormContainer);
-}
-
 FormContainer.propTypes = {
 	form: PropTypes.object,
 	config: PropTypes.object,
@@ -75,3 +71,7 @@ FormContainer.propTypes = {
 	enableReset: PropTypes.bool,
 	fields: PropTypes.array,
 };
+
+export default function getFormRenderer(fields, validate) {
+	return form({fields, validate})(FormContainer);
+}

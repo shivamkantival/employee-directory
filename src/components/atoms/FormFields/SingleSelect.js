@@ -6,7 +6,6 @@ import Select from 'react-select';
 import BaseFieldRenderer from './BaseFieldRenderer';
 
 //utils
-import _isUndefined from 'lodash/isUndefined';
 import {pure} from 'recompose';
 
 //styles
@@ -14,9 +13,7 @@ import s from './FormFields.mod.scss';
 
 function SingleSelect(props) {
 	const {id, fieldClass, label, options, fieldProps, error} = props;
-	const hasErrorToShow = !_isUndefined(error);
 	return (<BaseFieldRenderer
-    showError={hasErrorToShow}
     error={error}
     label={label}
     id={id}

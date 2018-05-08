@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import {Input} from 'reactstrap';
 
 //utils
-import _isUndefined from 'lodash/isUndefined';
 import {pure} from 'recompose';
 
 //styles
@@ -15,9 +14,7 @@ import BaseFieldRenderer from './BaseFieldRenderer';
 
 function ColorInput(props) {
 	const {id, fieldClass, label, fieldProps, error} = props;
-	const hasErrorToShow = !_isUndefined(error);
 	return (<BaseFieldRenderer
-    showError={hasErrorToShow}
     error={error}
     label={label}
     id={id}

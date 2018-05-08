@@ -4,19 +4,19 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const app = express();
-const config = require('./webpack.prod.js');
+const config = require('../config/webpack/webpack.prod');
 const compiler = webpack(config);
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
 // configuration file as a base.
 app.use(webpackDevMiddleware(compiler, {
-  publicPath: config.output.publicPath
+	publicPath: config.output.publicPath,
 })).get('/cool', function(request, response) {
-  response.send(cool());
+	response.send(cool());
 });
 
 // Serve the files on port 3000.
 app.listen(PORT, function () {
-  console.log(`Example app listening on port ${PORT}!\n`);
+	console.log(`Example app listening on port ${PORT}!\n`); //eslint-disable-line
 });

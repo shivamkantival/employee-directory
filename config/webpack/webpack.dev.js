@@ -2,5 +2,5 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-  devtool: 'inline-eval-source-map',
+	devtool: 'inline-eval-source-map',
 });

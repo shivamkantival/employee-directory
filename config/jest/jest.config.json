@@ -1,0 +1,17 @@
+{
+    "rootDir": "../../",
+    "modulePaths": [
+        "<rootDir>/src"
+    ],
+    "notify": true,
+    "testMatch": [ 
+        "**/__tests__/**/*.spec.js?(x)",
+        "**/?(*.)spec.js?(x)"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests",
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg)$": "jest-static-stubs/jpg",
+      "^.+\\.gif$": "jest-static-stubs/gif",
+      "^.+\\.(eot|otf|svg|ttf|woff|woff2|mp3|m4a|aac|oga|scss)$": "identity-obj-proxy"
+    }
+}

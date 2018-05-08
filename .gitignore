@@ -1,11 +1,19 @@
+#node packages
 node_modules/
+package-lock.json
+
+#file formats
 *.pyc
 *.yml
 *.lock
 *.xml
-package-lock.json
+
+#workspace files
 workspace.xml
-/tmp/
 .vscode
 .DS_Store
 jsconfig.json
+.npmrc
+
+#temporary files
+/tmp/

@@ -6,7 +6,6 @@ import {Input} from 'reactstrap';
 import BaseFieldRenderer from './BaseFieldRenderer';
 
 //utils
-import _isUndefined from 'lodash/isUndefined';
 import {pure} from 'recompose';
 
 //styles
@@ -14,9 +13,7 @@ import s from './FormFields.mod.scss';
 
 function TextInput(props) {
 	const {id, fieldClass, label, placeholder, fieldProps, error} = props;
-	const hasErrorToShow = !_isUndefined(error);
 	return (<BaseFieldRenderer
-    showError={hasErrorToShow}
     error={error}
     label={label}
     id={id}
@@ -29,7 +26,7 @@ function TextInput(props) {
       type="text"
       name={id}
       placeholder={placeholder}
-      valid={!hasErrorToShow}
+      valid={!!error}
       {...fieldProps}
     />
   </BaseFieldRenderer>);
