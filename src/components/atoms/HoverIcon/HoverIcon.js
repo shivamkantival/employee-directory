@@ -31,7 +31,7 @@ function HoverIcon(props) {
 
 HoverIcon.propTypes = {
 	backgroundColor: PropTypes.string,
-	image: PropTypes.string,
+	image: PropTypes.object,
 	iconSize: PropTypes.string,
 	source: PropTypes.string,
 };

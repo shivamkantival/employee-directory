@@ -63,24 +63,24 @@ class DynamicImageLoader extends PureComponent {
 
 	render() {
 		const {error, loading} = this.state,
-			props = this.props,
-			source = props.source;
+			props = this.props;
 
     //shows error if error occured, else shows loader if is currently loading
-		const loadingStatus = (error && (<div className={classnames(s.errorStyles)}>Image not found</div>))
-      || (loading && (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />));
+		const fetchStatus = error
+			? (<div className={classnames(s.errorStyles)}>Image not found</div>)
+      : loading && (<InlineLoader loaderClass={s.loaderStyles} size={SIZES.sm} />);
 
 		return (<div className={props.containerClassName}>
       <PlaceholderImage
         imageStyles={s.imageStyles}
         placeholderStyle={s.placeholder}
-        source={source}
+        source={props.source}
         onLoad={this.handleOnLoad}
         onError={this.handleOnError}
         fallbackImg={props.fallbackImg}
         hasError={error}
       />
-      {loadingStatus}
+      {fetchStatus}
     </div>);
 	}
 }

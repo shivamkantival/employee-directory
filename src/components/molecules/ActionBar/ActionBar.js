@@ -13,6 +13,8 @@ import HoverIcon from 'components/atoms/HoverIcon';
 //assets
 import empDirImage from 'assets/empDirImage.svg';
 
+const buttonSize = 'small';
+
 class ActionBar extends PureComponent {
 	constructor(props) {
 		super(props);
@@ -41,10 +43,10 @@ class ActionBar extends PureComponent {
 
 	renderActionButtons = () => (
       <ButtonToolbar>
-        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={this.toggleShowAddUser} >
+        <Button bsSize={buttonSize} bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={this.toggleShowAddUser} >
           Add Employee
         </Button>
-        <Button bsSize="medium" bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={this.toggleShowFilters} >
+        <Button bsSize={buttonSize} bsStyle="info" bsClass={classnames(s.actionButton, 'btn')} onClick={this.toggleShowFilters} >
           Apply Filters
         </Button>
       </ButtonToolbar>

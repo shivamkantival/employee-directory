@@ -8,10 +8,8 @@
         "**/__tests__/**/*.spec.js?(x)",
         "**/?(*.)spec.js?(x)"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests",
     "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg)$": "jest-static-stubs/jpg",
-      "^.+\\.gif$": "jest-static-stubs/gif",
-      "^.+\\.(eot|otf|svg|ttf|woff|woff2|mp3|m4a|aac|oga|scss)$": "identity-obj-proxy"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
     }
 }
