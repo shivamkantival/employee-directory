@@ -1,6 +1,7 @@
 #node packages
 node_modules/
 package-lock.json
+jest-coverage/
 
 #file formats
 *.pyc

@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest --config ./config/jest/jest.config.json",
     "test-update": "jest --config ./config/jest/jest.config.json --updateSnapshot",
+    "test-coverage": "jest --config ./config/jest/jest.config.json --coverage",
     "lint": "./node_modules/eslint/bin/eslint.js ./src/*",
     "fix-lint": "./node_modules/eslint/bin/eslint.js --fix ./src/*",
     "build": "webpack --config ./config/webpack/webpack.prod.js",
