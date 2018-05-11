@@ -5,10 +5,6 @@ import PropTypes from 'prop-types';
 import s from './UserCardsContainer.mod.scss';
 import classnames from 'classnames';
 
-//state and actions
-import {connect} from 'react-redux';
-import {fetchAllEmployees, updateEmployee} from 'actions/actionsHandlers/employeeDetails';
-
 //utils
 import _uniqueId from 'lodash/uniqueId';
 
@@ -37,11 +33,11 @@ class UserCardsContainer extends PureComponent {
 		}
 	}
 
-	renderCard = userDetails => <UserCard
+	renderCard = userDetails => (<UserCard
       userDetails={userDetails}
       onUpdate={this.props.updateUser}
       key={`${this.uniqueKey}_${userDetails.id}`}
-    />;
+	/>);
 
 	render() {
 		const {users = [], loading} = this.props;
@@ -54,15 +50,6 @@ class UserCardsContainer extends PureComponent {
 	}
 }
 
-function mapStateToProps(state) {
-	const employeeDetailsState = state.employeeDetails;
-	return {
-		loading: employeeDetailsState.loading,
-		loaded: employeeDetailsState.loaded,
-		users: employeeDetailsState.data,
-	};
-}
-
 UserCardsContainer.propTypes = {
 	loading: PropTypes.bool,
 	loaded: PropTypes.bool,
@@ -71,10 +58,4 @@ UserCardsContainer.propTypes = {
 	users: PropTypes.array,
 };
 
-export default connect(
-  mapStateToProps,
-	{
-		fetchAllUsers: fetchAllEmployees,
-		updateUser: updateEmployee,
-	},
-)(UserCardsContainer);
+export default UserCardsContainer;

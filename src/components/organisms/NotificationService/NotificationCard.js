@@ -33,7 +33,7 @@ class NotificationCard extends PureComponent {
 	closeNotification = () => {
 		const {onRemove, notification} = this.props;
 
-		onRemove && onRemove(notification.id);
+		onRemove(notification.id);
 	};
 
 	forceClose = () => {
@@ -66,7 +66,7 @@ class NotificationCard extends PureComponent {
 
 NotificationCard.propTypes = {
 	notification: PropTypes.object,
-	onRemove: PropTypes.func,
+	onRemove: PropTypes.func.isRequired,
 };
 
 export default NotificationCard;

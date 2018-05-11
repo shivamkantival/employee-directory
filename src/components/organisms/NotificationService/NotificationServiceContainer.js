@@ -30,10 +30,9 @@ class NotificationServiceContainer extends PureComponent {
 		eventManager.off(SHOW_NOTIF, this.addNotification);
 	}
 
-	addNotification = (notificationData = {}) => {
-		const notifications = this.state.notifications;
-		this.setState({
-			notifications: [...notifications, {...notificationData, id: _uniqueId()}],
+	addNotification = notificationData => {
+		notificationData && this.setState({
+			notifications: [...this.state.notifications, {...notificationData, id: _uniqueId()}],
 		});
 	}
 

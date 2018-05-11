@@ -15,7 +15,7 @@
     "coveragePathIgnorePatterns": [
         "service.js",
         "/service/",
-        "/actionHandlers/",
+        "/actions/actionsHandlers/",
         "/jest-coverage/"
     ],
     "moduleNameMapper": {

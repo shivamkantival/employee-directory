@@ -16,8 +16,8 @@ describe('validators', () => {
 		});
 
 		test('should return falsy value if the defined value is a valid string', () => {
+			expect(validators.stringNotEmpty('sdh')).toBeFalsy();
 		});
-		expect(validators.stringNotEmpty('sdh')).toBeFalsy();
 	});
 
 	describe('optionNotEmpty()', () => {
@@ -27,10 +27,15 @@ describe('validators', () => {
 
 		test('should return error text if empty option is selected', () => {
 			expect(validators.optionNotEmpty({})).toBeTruthy();
+			expect(validators.optionNotEmpty('')).toBeTruthy();
 		});
 	});
 
 	describe('validateName()', () => {
+		test('error text is returned if value is not a valid string', () => {
+			expect(validators.validateName({})).toBeTruthy();
+		});
+
 		test('if a name contains any character than `.`, `-` ` ` or alphabets, error text must be returned', () => {
 			expect(validators.validateName('shi$ksfj')).toBeTruthy();
 			expect(validators.validateName('shiksfj,')).toBeTruthy();
@@ -55,6 +60,32 @@ describe('validators', () => {
 
 		test('returns falsy value if a valid option is provided', () => {
 			expect(validators.validateTeam(TEAM_OPTIONS[0].value)).toBeFalsy();
+		});
+	});
+
+	describe('populateErrors()', () => {
+		test('only adds provided key to object if value is defined', () => {
+			const key = 'jsfhkj',
+				value = 'ejhyuk';
+			expect(validators.populateErrors({}, value, key)[key]).toBe(value);
+		});
+
+		test('if the value to be added is not defined, key prop is not added to initial object', () => {
+			const key = 'hgfjjdk',
+				value = undefined;
+			expect(validators.populateErrors({}, value, key).hasOwnProperty(key)).toBeFalsy();
+		});
+	});
+
+	describe('validateURL()', () => {
+		test('returns error text if provided value is not a valid url', () => {
+			expect(validators.validateURL('google.com')).toBeTruthy();
+			expect(validators.validateURL('www.google.com')).toBeTruthy();
+		});
+
+		test('for valid url values falsy error text is returned', () => {
+			expect(validators.validateURL('http:/google.com')).toBeFalsy();
+			expect(validators.validateURL('http:/google.com:80')).toBeFalsy();
 		});
 	});
 });

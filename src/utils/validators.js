@@ -27,17 +27,11 @@ export function stringNotEmpty(value) {
 }
 
 export function optionNotEmpty(value) {
-	if (_isEmpty(value)) {
-		return CANNOT_BE_EMPTY;
-	}
-	return undefined;
+	return _isEmpty(value) ? CANNOT_BE_EMPTY : undefined;
 }
 
 export function validateName(value) {
-	if (!/^[A-Za-z\.\- ]+$/.test(value)) {
-		return NOT_VALID;
-	}
-	return undefined;
+	return _isString(value) && /^[A-Za-z\.\- ]+$/.test(value) ? undefined : NOT_VALID;
 }
 
 export function validateTeam(value) {
@@ -49,6 +43,7 @@ export function validateLocation(value) {
 }
 
 export function validateURL(value) {
+	const result = urlValidator.isUri(value);
 	if (!urlValidator.isUri(value)) {
 		return NOT_VALID;
 	}
@@ -59,7 +54,10 @@ export function validateURL(value) {
 // this method mutates object as validator creates new object every time validation is run
 export function populateErrors(errors, computedFieldError, fieldType) {
 	if (computedFieldError) {
-		errors[fieldType] = computedFieldError;
+		return {
+			...errors,
+			[fieldType]: computedFieldError,
+		};
 	}
 	return errors;
 }
@@ -72,4 +70,5 @@ export default {
 	validateURL,
 	optionNotEmpty,
 	validateTeam,
+	populateErrors,
 };

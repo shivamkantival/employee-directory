@@ -12,9 +12,9 @@ const eventManager = (function () {
 
 		off (eventType, callBack) {
 			const eventList = events.get(eventType) || [],
-				callBackIndex = eventList.find(eventCallBack => eventCallBack === callBack);
+				callBackIndex = eventList.findIndex(eventCallBack => eventCallBack === callBack);
 
-			if (callBackIndex) {
+			if (callBackIndex !== -1) {
 				eventList.splice(callBackIndex, 1);
 			}
 		},
@@ -29,6 +29,10 @@ const eventManager = (function () {
 
 		clear () {
 			events.clear();
+		},
+
+		getListeners (eventType) {
+			return events.get(eventType) || [];
 		},
 	};
 })();

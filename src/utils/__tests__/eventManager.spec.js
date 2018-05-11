@@ -18,6 +18,12 @@ describe('EventManager', () => {
 		eventManager.clear();
 	});
 
+	test('if no listener method is provided while registering to an event, it has no effect', () => {
+		eventManager.on(EVENT1);
+
+		expect(eventManager.getListeners(EVENT1).length).toBeFalsy();
+	});
+
 	test('all callbacks on a event must fire when that event is emitted', () => {
 		eventManager.on(EVENT1, mockCallback1);
 		eventManager.on(EVENT1, mockCallback2);
@@ -43,6 +49,23 @@ describe('EventManager', () => {
 		expect(mockCallback1).toHaveBeenCalledTimes(0);
 		expect(mockCallback2).toHaveBeenCalledTimes(1);
 		expect(mockCallback2).toHaveBeenLastCalledWith(PARAM1);
+
+		//removing a listener that is never registered has no effect
+		eventManager.off(EVENT1, mockCallback1);
+		eventManager.emit(EVENT1, PARAM1);
+		expect(mockCallback1).toHaveBeenCalledTimes(0);
+		expect(mockCallback2).toHaveBeenCalledTimes(2);
+		expect(mockCallback2).toHaveBeenLastCalledWith(PARAM1);
+	});
+
+	test('trying to remove a listener for some event that does not have that event registered has no effect', () => {
+		eventManager.on(EVENT1, mockCallback1);
+		eventManager.off(EVENT2, mockCallback1);
+
+		//mockcallback1 is still fired when EVENT1 is emitted
+		eventManager.emit(EVENT1, PARAM1);
+		expect(mockCallback1).toHaveBeenCalledTimes(1);
+		expect(mockCallback1).toHaveBeenLastCalledWith(PARAM1);
 	});
 
 	test('all listeners on all eventTypes must be removed if clear is called on eventManager', () => {
